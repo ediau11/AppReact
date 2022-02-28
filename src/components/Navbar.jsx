@@ -1,13 +1,21 @@
 import React from "react";
+import CartWidget from "./CartWidget";
 import logo from "./LogoNav2.png";
+import Instagram from "./iconosRedesSociales/IconoInstagram.svg";
+import Whatsapp from "./iconosRedesSociales/IconoWs.svg";
 
 const Navbar = () => {
   return (
     <div>
       <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
         <div className="container-fluid">
-          <img src={logo} className="navbar-brand" />
-          <h4 className="colorLogo">DJ's House</h4>
+          <img className="logoPrincipal" src={logo} alt="" />
+          <img
+            src="https://see.fontimg.com/api/renderfont4/L7nD/eyJyIjoiZnMiLCJoIjozNSwidyI6MTAwMCwiZnMiOjM1LCJmZ2MiOiIjRkZGRkZGIiwiYmdjIjoiI0U4RTFFMSIsInQiOjF9/REonJ3MgSG91c2U/musieer.png"
+            className="navbar-brand logo"
+          />
+
+          <h4 className="colorLogo"></h4>
           <button
             className="navbar-toggler"
             type="button"
@@ -44,16 +52,13 @@ const Navbar = () => {
                 </a>
               </li>
             </ul>
-            <form className="d-flex">
-              <input
-                className="form-control me-2"
-                type="text"
-                placeholder="Busca tu producto"
-              />
-              <button className="btn btn-success" type="button">
-                Buscar
-              </button>
-            </form>
+            <div className="ubicacionLogos">
+              <img className="iconoInstagram" src={Instagram} alt="" />
+
+              <img className="iconoInstagram" src={Whatsapp} alt="" />
+            </div>
+
+            <CartWidget />
           </div>
         </div>
       </nav>
