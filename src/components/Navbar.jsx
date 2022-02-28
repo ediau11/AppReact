@@ -1,6 +1,6 @@
 import React from "react";
 import CartWidget from "./CartWidget";
-import logo from "./LogoNav2.png";
+import logo from "./Logos/LogoNav2.png";
 import Instagram from "./iconosRedesSociales/IconoInstagram.svg";
 import Whatsapp from "./iconosRedesSociales/IconoWs.svg";
 
