@@ -92,3 +92,54 @@
   padding-top: 0 !important;
   padding-bottom: 0 !important;
 }
+
+/* Footer */
+
+.pt-4 {
+  background-color: rgba(5, 5, 5, 0.91);
+  margin-top: 2rem;
+}
+.colorTexto {
+  color: white;
+}
+
+.colorLinks {
+  color: rgba(255, 255, 255, 0.55);
+  text-decoration: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+}
+
+.colorLinks :hover {
+  color: white !important;
+}
+
+.colorLinks1 {
+  color: white;
+}
+
+/* Footer final */
+.card {
+  width: 200px;
+  margin-top: 20px;
+  margin-left: 5rem;
+  text-align: center;
+}
+
+.botonSumar {
+  margin-left: 20px;
+  padding: 2px;
+}
+
+.imagenMezclador {
+  width: 200px;
+  padding-right: 32px;
+}
+
+.card {
+  border: 3px solid black !important;
+}
+
+.space {
+  margin-top: 20px;
+}
