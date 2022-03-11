@@ -6,6 +6,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import Footer from "./components/Footer";
 
+// import "./consumiendoApis/ConsumiendoPokeApi";
 function App() {
   return (
     <div className="App">

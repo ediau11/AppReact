@@ -6,12 +6,13 @@ import Imagen4 from "./imagenesPrimerDesafio/Imagen4.jpg";
 import Imagen5 from "./imagenesPrimerDesafio/Imagen5.jpg";
 import Imagen6 from "./imagenesPrimerDesafio/Imagen6.jpeg";
 import ItemCount from "./ItemCount";
+import ItemList from "./ItemList";
 
 const onAdd = () => {
   console.log("Agregue al carrito");
 };
 
-const ItemListContainer = () => {
+function ItemListContainer() {
   return (
     <>
       <h4 className="fuente">
@@ -40,8 +41,9 @@ const ItemListContainer = () => {
         </div>
       </section>
       <ItemCount stock={5} initial={0} onAdd={onAdd} />
+      <ItemList />
     </>
   );
-};
+}
 
 export default ItemListContainer;
