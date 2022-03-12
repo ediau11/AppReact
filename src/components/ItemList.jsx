@@ -1,10 +1,11 @@
 import React from "react";
+import Item from "./Item";
 
 function ItemList({ lista }) {
   return (
     <div>
-      {lista.map((productos, i) => (
-        <h1 key={i}>{productos.name}</h1>
+      {lista.map((producto) => (
+        <Item producto={producto} key={producto.id} />
       ))}
     </div>
   );

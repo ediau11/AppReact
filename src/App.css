@@ -132,12 +132,14 @@
 }
 
 .imagenMezclador {
-  width: 200px;
+  width: 300px;
   padding-right: 32px;
 }
 
 .card {
-  border: 3px solid black !important;
+  border: 1.4px solid black !important;
+  height: 400px;
+  width: 300px !important;
 }
 
 .space {

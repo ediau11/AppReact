@@ -27,27 +27,27 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="mynavbar">
             <ul className="navbar-nav me-auto">
               <li className="nav-item">
-                <a className="nav-link" href="javascript:void(0)">
+                <a className="nav-link" href="#">
                   Sobre Nosotros
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="javascript:void(0)">
+                <a className="nav-link" href="#">
                   Productos
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="javascript:void(0)">
+                <a className="nav-link" href="#">
                   Pioneer
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="javascript:void(0)">
+                <a className="nav-link" href="#">
                   Allen and Heath
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="javascript:void(0)">
+                <a className="nav-link" href="#">
                   Denom DJ
                 </a>
               </li>
