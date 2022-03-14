@@ -3,8 +3,8 @@ import React from "react";
 const Item = ({ producto }) => {
   return (
     <div>
-      <div class="row">
-        <div class="col-sm-3">
+      <div className="d-flex flex-wrap justify-content-around">
+        <div class="col-lg-4">
           <div className="card cardEduardo">
             <div className="card-body">
               <h2 className="card-title">{producto.titulo}</h2>

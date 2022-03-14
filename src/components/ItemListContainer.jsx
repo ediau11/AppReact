@@ -37,7 +37,7 @@ function ItemListContainer() {
       titulo: "DDJ-FLX6",
       precio: 1400,
       img: "https://i.postimg.cc/NGx1DCCj/Imagen-Proyecto3.png",
-      descripcion: "Controlador DJ de 4 canales para rekorbox y Serato DJ Pro",
+      descripcion: "Controlador DJ de 4 canales para rekorbox y Serato DJ",
     },
     {
       id: 4,
