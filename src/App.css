@@ -145,3 +145,6 @@
 .space {
   margin-top: 20px;
 }
+.justify-content-around {
+  justify-content: flex-start !important ;
+}

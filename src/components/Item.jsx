@@ -2,8 +2,8 @@ import React from "react";
 
 const Item = ({ producto }) => {
   return (
-    <div>
-      <div className="d-flex flex-wrap justify-content-around">
+    <>
+      <div className="row">
         <div class="col-lg-4">
           <div className="card cardEduardo">
             <div className="card-body">
@@ -15,8 +15,11 @@ const Item = ({ producto }) => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
 export default Item;
+{
+  /*  */
+}
