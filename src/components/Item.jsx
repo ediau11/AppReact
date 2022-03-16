@@ -4,7 +4,7 @@ const Item = ({ producto }) => {
   return (
     <>
       <div className="row">
-        <div class="col-lg-4">
+        <div className="col-lg-4">
           <div className="card cardEduardo">
             <div className="card-body">
               <h2 className="card-title">{producto.titulo}</h2>
