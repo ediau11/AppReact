@@ -3,13 +3,14 @@ import CartWidget from "./CartWidget";
 import logo from "./Logos/LogoNav2.png";
 import Instagram from "./iconosRedesSociales/IconoInstagram.svg";
 import Whatsapp from "./iconosRedesSociales/IconoWs.svg";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <div>
       <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
         <div className="container-fluid">
-          <img className="logoPrincipal" src={logo} alt="" />
+          <img className="logoPrincipal" to="./" src={logo} alt="" />
           <img
             src="https://see.fontimg.com/api/renderfont4/L7nD/eyJyIjoiZnMiLCJoIjozNSwidyI6MTAwMCwiZnMiOjM1LCJmZ2MiOiIjRkZGRkZGIiwiYmdjIjoiI0U4RTFFMSIsInQiOjF9/REonJ3MgSG91c2U/musieer.png"
             className="navbar-brand logo"
@@ -27,29 +28,34 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="mynavbar">
             <ul className="navbar-nav me-auto">
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <Link className="nav-link" to="/">
+                  Inicio
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="Sobre Nosotros">
                   Sobre Nosotros
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <Link className="nav-link" to="Productos">
                   Productos
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <Link className="nav-link" to="Pioneer">
                   Pioneer
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Allen and Heath
-                </a>
+                <Link className="nav-link" to="Allem">
+                  Allem
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Denom DJ
-                </a>
+                <Link className="nav-link" to="DenomDJ">
+                  DenomDJ
+                </Link>
               </li>
             </ul>
             <div className="ubicacionLogos">

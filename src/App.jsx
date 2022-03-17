@@ -15,7 +15,15 @@ function App() {
         <Navbar />
 
         <Routes>
-          <Route path="/" element={<ItemListContainer />} />
+          {/* <Route path="/" element={<ItemListContainer />} /> */}
+          {/* <Route path="Productos" element={<ItemListContainer />} /> */}
+          <Route path="Productos" element={<ItemListContainer />} />
+          <Route path="Productos/:categoryId" element={<ItemListContainer />} />
+
+          <Route
+            path="Productos/:categoryId/:OtroParam"
+            element={<ItemListContainer />}
+          />
         </Routes>
 
         <Routes>

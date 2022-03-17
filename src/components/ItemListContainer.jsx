@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import Imagen1 from "./imagenesPrimerDesafio/Imagen1.jpg";
 import Imagen2 from "./imagenesPrimerDesafio/Imagen2.jpg";
 import Imagen3 from "./imagenesPrimerDesafio/Imagen3.jpg";
@@ -10,6 +11,10 @@ import ItemList from "./ItemList";
 
 function ItemListContainer() {
   const [listaProductos, setListaProductos] = useState([]);
+
+  const categoryId = useParams();
+  console.log(categoryId);
+
   const onAdd = () => {
     console.log("Agregue al carrito");
   };
@@ -22,6 +27,7 @@ function ItemListContainer() {
       img: "https://i.postimg.cc/sXqJrMSD/Imagen-Proyecto1.png",
       descripcion:
         "Controlador DJ para performances de 2 canales para Serato DJ Pro",
+      categoria: "mezclador",
     },
     {
       id: 2,
@@ -30,6 +36,7 @@ function ItemListContainer() {
       img: "https://i.postimg.cc/fWPPzLZd/Imagen-Proyecto2.png",
       descripcion:
         "Controlador DJ de 2 canales de estilo sctatch para Serato DJ lite",
+      categoria: "mezclador",
     },
 
     {
@@ -38,6 +45,7 @@ function ItemListContainer() {
       precio: 1400,
       img: "https://i.postimg.cc/NGx1DCCj/Imagen-Proyecto3.png",
       descripcion: "Controlador DJ de 4 canales para rekorbox y Serato DJ",
+      categoria: "controlador",
     },
     {
       id: 4,
@@ -45,6 +53,16 @@ function ItemListContainer() {
       precio: 4000,
       img: "https://i.postimg.cc/G2LpmKFX/Imagen-Proyecto4.png",
       descripcion: "Subcontrolador para rekordbox y Serato DJ Pro",
+      categoria: "controlador",
+    },
+
+    {
+      id: 5,
+      titulo: " DDJ-XP2 ",
+      precio: 4000,
+      img: "https://i.postimg.cc/G2LpmKFX/Imagen-Proyecto4.png",
+      descripcion: "Subcontrolador para rekordbox y Serato DJ Pro",
+      categoria: "controlador",
     },
   ];
   const imprimirProductos = () => {
@@ -58,11 +76,23 @@ function ItemListContainer() {
       }, 3000);
     });
   };
+
   console.log(imprimirProductos());
 
   useEffect(() => {
     imprimirProductos()
-      .then((respuesta) => setListaProductos(respuesta))
+      .then((respuesta) => {
+        if (!categoryId) {
+          setListaProductos(respuesta);
+        } else {
+          setListaProductos(
+            respuesta.filter(
+              (listaProductos) => listaProductos.categoria == categoryId
+            )
+          );
+        }
+      })
+      // .then((respuesta) => setListaProductos(respuesta))
       .catch((error) => console.log(error));
   }, []);
   console.log(listaProductos);
