@@ -33,27 +33,27 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="Sobre Nosotros">
+                <Link className="nav-link" to="sobre nosotros">
                   Sobre Nosotros
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="Productos">
+                <Link className="nav-link" to="productos">
                   Productos
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="Pioneer">
+                <Link className="nav-link" to="productos/pioneer">
                   Pioneer
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="Allem">
-                  Allem
+                <Link className="nav-link" to="/productos/allem">
+                  Allem and Heath
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="DenomDJ">
+                <Link className="nav-link" to="/productos/denom">
                   DenomDJ
                 </Link>
               </li>

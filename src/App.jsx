@@ -15,20 +15,19 @@ function App() {
         <Navbar />
 
         <Routes>
-          {/* <Route path="/" element={<ItemListContainer />} /> */}
-          {/* <Route path="Productos" element={<ItemListContainer />} /> */}
-          <Route path="Productos" element={<ItemListContainer />} />
-          <Route path="Productos/:categoryId" element={<ItemListContainer />} />
-
+          <Route path="/Productos" element={<ItemListContainer />} />
           <Route
-            path="Productos/:categoryId/:OtroParam"
+            path="/Productos/:categoryId"
             element={<ItemListContainer />}
           />
+
+          <Route
+            path="/Productos/:categoryId/:OtroParam"
+            element={<ItemListContainer />}
+          />
+          <Route path="/detail/:itemId" element={<ItemDetailContainer />} />
         </Routes>
 
-        <Routes>
-          <Route path="ItemDetailContainer" element={<ItemDetailContainer />} />
-        </Routes>
         <Footer />
       </div>
     </BrowserRouter>

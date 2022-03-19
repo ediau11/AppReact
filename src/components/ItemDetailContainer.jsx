@@ -1,39 +1,69 @@
 import React, { useEffect, useState } from "react";
 import ItemDetail from "./ItemDetail";
+import { useParams } from "react-router-dom";
 
 function ItemDetailContainer({}) {
-  const [productoDesafio, setProductoDesafio] = useState({});
+  const [item, setItem] = useState([]);
+  const [loading, setLoading] = useState(true);
 
-  const producto = {
-    id: 1,
-    nombre: "DDJ-FLX6",
-    detalle:
-      "Cautiva a tu audiencia con el DDJ-FLX6-W. Esta unidad de 4 canales, que incluye una gran cantidad de características nuevas, facilita entusiasmar a la audiencia, mezclar pistas de géneros musicales totalmente diferentes y darle vida a sus presentaciones con efectos de scratch de sonido profesional.",
-    imagen: "https://i.postimg.cc/NGx1DCCj/Imagen-Proyecto3.png",
-  };
+  const { itemId } = useParams();
 
-  const ImprimirProducto = () => {
+  const productoDetail = [
+    {
+      id: 1,
+      titulo: "DDJ-SR2",
+      precio: 2000,
+      img: "https://i.postimg.cc/sXqJrMSD/Imagen-Proyecto1.png",
+      descripcion:
+        "Controlador DJ para performances de 2 canales para Serato DJ Pro",
+      categoria: "pioneer",
+    },
+    {
+      id: 2,
+      titulo: "DDJ-REV1",
+      precio: 2000,
+      img: "https://i.postimg.cc/fWPPzLZd/Imagen-Proyecto2.png",
+      descripcion:
+        "Controlador DJ de 2 canales de estilo sctatch para Serato DJ lite",
+      categoria: "pioneer",
+    },
+  ];
+
+  const imprimiProductos = () => {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
-        if (producto.length === 0) {
-          reject("No hay ningun producto");
+        if (productoDetail.length === 0) {
+          reject("No hay productos disponible");
         } else {
-          resolve(producto);
+          resolve(productoDetail);
         }
-      }, 2000);
+      }, 1500);
     });
   };
 
+  console.log(itemId);
+
   useEffect(() => {
-    ImprimirProducto()
-      .then((respuesta1) => setProductoDesafio(respuesta1))
-      .catch((error1) => console.log(error1));
-  });
+    imprimiProductos()
+      .then((respuesta1) => {
+        if (!itemId) {
+          setItem(respuesta1);
+        } else {
+          setItem(respuesta1.find((prod) => prod.id === Number(itemId)));
+        }
+      })
+      .finally(() => {
+        setLoading(false);
+      });
+  }, [itemId]);
+
+  console.log(imprimiProductos);
 
   return (
-    <div>
-      <ItemDetail lista={productoDesafio} />
-    </div>
+    <>
+      <h2>ItemDetail</h2>
+      {loading ? <h2>Cargando...</h2> : <ItemDetail lista1={item} />}
+    </>
   );
 }
 
