@@ -1,39 +1,36 @@
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Navbar Inicio */
+.navbar {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
-
-.estilo {
-  color: blue;
-  text-align: center;
-}
-.btn-success {
-  background-color: green !important;
-  border-color: transparent !important;
-}
-
-.flex {
-  display: flex;
-  flex-direction: row;
-}
-
-.colorLogo {
-  color: white;
-  margin-top: 5px;
-}
-
 .nav-link {
   margin-left: 1.5rem;
   font-size: 16px;
 }
-.bg-dark {
-  background: black !important;
+.nav-item {
+  margin-left: 3.2rem;
+}
+.logo {
+  width: 130px;
+  height: 50px;
+  object-fit: contain;
+}
+.logoPrincipal {
+  margin-right: 5px;
+}
+.iconoInstagram {
+  width: 20px;
+  height: 20px;
+  margin-left: 0.4rem;
+}
+.ubicacionLogos {
+  margin-right: 2.5rem;
+}
+/* Navbar Final */
+
+/* Estilos home inicio */
+.row {
+  margin-top: 2rem !important ;
 }
 .galeria img {
   width: 100%;
@@ -41,45 +38,9 @@
   padding: 15px;
   object-fit: cover;
 }
+/* Estilos home final */
 
-.row {
-  margin-top: 2rem !important ;
-  margin-right: 0 !important;
-}
-.nav-item {
-  margin-left: 3.2rem;
-}
-.fuente {
-  font-family: "Ubuntu", sans-serif !important;
-  margin-top: 2rem;
-  text-align: center;
-}
-
-.logo {
-  width: 130px;
-  height: 50px;
-  object-fit: contain;
-}
-
-.iconoInstagram {
-  width: 20px;
-  height: 20px;
-  margin-left: 0.4rem;
-}
-
-.ubicacionLogos {
-  margin-right: 2.5rem;
-}
-.logoPrincipal {
-  margin-right: 5px;
-}
-
-.navbar {
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-}
-
-/* Footer */
+/* Footer inicio */
 
 .pt-4 {
   background-color: rgba(5, 5, 5, 0.91);
@@ -88,103 +49,36 @@
 .colorTexto {
   color: white;
 }
-
 .colorLinks {
   color: rgba(255, 255, 255, 0.55);
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out;
 }
-
 .colorLinks :hover {
   color: white !important;
 }
-
 .colorLinks1 {
   color: white;
 }
-
 /* Footer final */
+
+/* Card Productos inicio */
+
 .card {
   width: 200px;
   margin-top: 20px;
   margin-left: 5rem;
   text-align: center;
 }
-
-.botonSumar {
-  margin-left: 20px;
-  padding: 2px;
-}
-
 .imagenMezclador {
   width: 300px;
   padding-right: 32px;
 }
-
 .cardEduardo {
   height: 410px;
   width: 300px !important;
 }
-
-.space {
-  margin-top: 20px;
-}
-.justify-content-around {
-  justify-content: flex-start !important ;
-}
-
-.tituloDetalle {
-  text-align: center;
-  margin-top: 4rem;
-  font-size: 2rem;
-}
-.descripcionDetalle {
-  padding: 20px !important;
-  font-size: 1.1rem;
-}
-.card {
-  width: 400px;
-  border: transparent;
-  border: none;
-}
-.card-img-top {
-  width: 500px !important;
-}
-
-.cardDetail {
-  width: 400px !important;
-  margin: 50px;
-}
-
-.columnaDerechaDetail {
-  margin-left: 30%;
-}
-.tituloDetail {
-  text-align: center !important;
-  margin-bottom: 2rem;
-}
-
-.imgDetail {
-  width: 500px;
-  height: 500px;
-  object-fit: contain;
-  padding-bottom: 10rem;
-}
-.parrafoDetail {
-  font-size: 1.2rem;
-  padding: 10px;
-  font-weight: 500;
-}
-.imagenDetalle1 {
-  width: 50%;
-  height: 50%;
-}
-.mx-auto {
-  width: 250px;
-  height: 120px;
-}
-
 .card-body {
   background-image: linear-gradient(
     to right top,
@@ -202,3 +96,41 @@
     #ffffff
   );
 }
+
+/*Card Productos Final  */
+
+/* ItemCount Inicio */
+.botonSumar {
+  margin-left: 20px;
+  padding: 2px;
+}
+/* ItemCount Final */
+
+/* Detalle Producto Inicio */
+.tituloDetalle {
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 2rem;
+}
+.descripcionDetalle {
+  padding: 20px !important;
+  font-size: 1.1rem;
+}
+.tituloDetail {
+  text-align: center !important;
+  margin-bottom: 2rem;
+}
+.parrafoDetail {
+  font-size: 1.2rem;
+  padding: 10px;
+  font-weight: 500;
+}
+.imagenDetalle1 {
+  width: 50%;
+  height: 50%;
+}
+.mx-auto {
+  width: 250px;
+  height: 120px;
+}
+/* Detalle Producto Final */
