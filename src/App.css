@@ -1,9 +1,3 @@
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -22,15 +16,6 @@
 .btn-success {
   background-color: green !important;
   border-color: transparent !important;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 .flex {
@@ -59,6 +44,7 @@
 
 .row {
   margin-top: 2rem !important ;
+  margin-right: 0 !important;
 }
 .nav-item {
   margin-left: 3.2rem;
@@ -136,8 +122,7 @@
   padding-right: 32px;
 }
 
-.card {
-  border: 1.4px solid black !important;
+.cardEduardo {
   height: 410px;
   width: 300px !important;
 }
@@ -157,4 +142,63 @@
 .descripcionDetalle {
   padding: 20px !important;
   font-size: 1.1rem;
+}
+.card {
+  width: 400px;
+  border: transparent;
+  border: none;
+}
+.card-img-top {
+  width: 500px !important;
+}
+
+.cardDetail {
+  width: 400px !important;
+  margin: 50px;
+}
+
+.columnaDerechaDetail {
+  margin-left: 30%;
+}
+.tituloDetail {
+  text-align: center !important;
+  margin-bottom: 2rem;
+}
+
+.imgDetail {
+  width: 500px;
+  height: 500px;
+  object-fit: contain;
+  padding-bottom: 10rem;
+}
+.parrafoDetail {
+  font-size: 1.2rem;
+  padding: 10px;
+  font-weight: 500;
+}
+.imagenDetalle1 {
+  width: 50%;
+  height: 50%;
+}
+.mx-auto {
+  width: 250px;
+  height: 120px;
+}
+
+.card-body {
+  background-image: linear-gradient(
+    to right top,
+    #f9f6f8,
+    #d7d5d8,
+    #b5b6b8,
+    #959798,
+    #77797a,
+    #787a7a,
+    #787a7b,
+    #797b7b,
+    #999a9b,
+    #babbbb,
+    #dcdcdd,
+    #ffffff
+  );
 }

@@ -7,6 +7,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import Footer from "./components/Footer";
 import ItemDetailContainer from "./components/ItemDetailContainer";
 import { BrowserRouter, Routes, Route, navigate } from "react-router-dom";
+import Inicio from "./components/Inicio.jsx";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Navbar />
 
         <Routes>
+          <Route path="/" element={<Inicio />} />
           <Route path="/Productos" element={<ItemListContainer />} />
           <Route
             path="/Productos/:categoryId"

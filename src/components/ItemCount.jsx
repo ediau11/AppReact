@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ImagenMezclador from "./ImagenCard/ImagenMezclador.png";
 
-const ItemCount = ({ stock, initial, onAdd }) => {
+export const ItemCount = ({ stock, initial, onAdd }) => {
   const [contador, setContador] = useState(initial);
 
   const sumar = () => {
@@ -27,16 +27,6 @@ const ItemCount = ({ stock, initial, onAdd }) => {
           <img src={ImagenMezclador} className="imagenMezclador"></img>
           <p className="card-text">Ingrese cantidad (5Max).</p>
           <h2>{contador}</h2>
-
-          <button onClick={restar} className="btn btn-dark mover botonRestar">
-            -
-          </button>
-          <button onClick={sumar} className="btn btn-dark botonSumar">
-            +
-          </button>
-          <button onClick={onAdd} className="btn btn-dark space">
-            Comprar
-          </button>
         </div>
       </div>
     </>

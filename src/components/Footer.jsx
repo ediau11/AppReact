@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "./Logos/LogoNav2.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -25,24 +26,24 @@ const Footer = () => {
               <h5 className="text-uppercase colorLinks1">Productos</h5>
               <ul className="list-unstyled">
                 <li>
-                  <a className="colorLinks" href="#!">
+                  <Link className="colorLinks" to="/productos">
                     Nuestros Productos
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="colorLinks" href="#!">
+                  <Link className="colorLinks" to="/productos/pioneer">
                     Pioneer
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="colorLinks" href="#!">
+                  <Link className="colorLinks" to="/productos/allem">
                     Allen and Heath
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="colorLinks" href="#!">
+                  <Link className="colorLinks" to="/productos/denom">
                     Denom DJ
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -51,24 +52,24 @@ const Footer = () => {
               <h5 className="text-uppercase colorLinks1">About</h5>
               <ul className="list-unstyled">
                 <li>
-                  <a className="colorLinks" href="#!">
+                  <Link className="colorLinks" to="nosotrs">
                     Sobre Nosotros
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="colorLinks" href="#!">
+                  <Link className="colorLinks" to="">
                     Preguntas Frecuentes
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="colorLinks" href="#!">
+                  <Link className="colorLinks" to="#!">
                     Medios de Pago
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="colorLinks" href="#!">
+                  <Link className="colorLinks" to="#!">
                     Redes Sociales
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
