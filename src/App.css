@@ -1,4 +1,5 @@
 /* Navbar Inicio */
+
 .navbar {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
@@ -26,9 +27,11 @@
 .ubicacionLogos {
   margin-right: 2.5rem;
 }
+
 /* Navbar Final */
 
 /* Estilos home inicio */
+
 .row {
   margin-top: 2rem !important ;
 }
@@ -38,6 +41,7 @@
   padding: 15px;
   object-fit: cover;
 }
+
 /* Estilos home final */
 
 /* Footer inicio */
@@ -61,6 +65,7 @@
 .colorLinks1 {
   color: white;
 }
+
 /* Footer final */
 
 /* Card Productos inicio */
@@ -100,13 +105,16 @@
 /*Card Productos Final  */
 
 /* ItemCount Inicio */
+
 .botonSumar {
   margin-left: 20px;
   padding: 2px;
 }
+
 /* ItemCount Final */
 
 /* Detalle Producto Inicio */
+
 .tituloDetalle {
   text-align: center;
   margin-top: 4rem;
@@ -133,4 +141,5 @@
   width: 250px;
   height: 120px;
 }
+
 /* Detalle Producto Final */
