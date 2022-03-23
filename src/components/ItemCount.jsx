@@ -49,7 +49,7 @@ export const ItemCount = ({
             +
           </button>
           <br />
-          <button onClick={handleAgregar} className="btn btn-dark my-2">
+          <button onClick={lista1} className="btn btn-dark my-2">
             Comprar
           </button>
         </div>
