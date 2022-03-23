@@ -12,6 +12,7 @@ const productos = [
     logoMarca: "https://i.postimg.cc/rsq7J38P/logo-Pioneer.png",
     imagenDetalle1: "https://i.postimg.cc/PJChYNdq/ddj-sr2-angle.jpg",
     imagenDetalle2: "https://i.postimg.cc/02JPN6tW/ddj-sr2-front-angle-nn.jpg",
+    stock: "10",
   },
   {
     id: 2,
@@ -26,6 +27,7 @@ const productos = [
     imagenDetalle1: "https://i.postimg.cc/d1j0HMYM/Imagen-Detalle1.png",
     imagenDetalle2: "https://i.postimg.cc/y8KsGQLs/Imagen-Detalle2.png",
     logoMarca: "https://i.postimg.cc/rsq7J38P/logo-Pioneer.png",
+    stock: "5",
   },
 
   {
@@ -42,6 +44,7 @@ const productos = [
       "https://i.postimg.cc/CM9dJpX2/DDJ-FLX6-prm-angle-201015-pc.png",
     imagenDetalle2:
       "https://i.postimg.cc/QdJtX9CL/DDJ-FLX6-prm-frontangle-201015-pc.png",
+    stock: "9",
   },
   {
     id: 4,
@@ -56,6 +59,7 @@ const productos = [
     imagenDetalle1: "https://i.postimg.cc/mkzVQWJ4/imagen-Detalle-Id4.jpg",
     imagenDetalle2:
       "https://i.postimg.cc/8cMK2VHH/ddj-xp2-setcut-serato-dvs.jpg",
+    stock: "12",
   },
 
   {
@@ -72,6 +76,7 @@ const productos = [
       "https://i.postimg.cc/LXc6V4P9/Xone-23-C-3-Quarters-Left-EDIT.jpg",
     imagenDetalle2:
       "https://i.postimg.cc/9MZjCd42/Xone-23-C-3-Quarters-Right-2800.jpg",
+    stock: "15",
   },
   {
     id: 6,
@@ -85,6 +90,7 @@ const productos = [
     logoMarca: "https://i.postimg.cc/G2nvZ1Tq/logo-Allem.png",
     imagenDetalle1: "https://i.postimg.cc/fbFhZDcn/Xone43-C-3-Q-Left-web.jpg",
     imagenDetalle2: "https://i.postimg.cc/br0XQnKp/Xone43-C-3-Q-Right-web.jpg",
+    stock: "15",
   },
   {
     id: 7,
@@ -98,6 +104,7 @@ const productos = [
       "La tan esperada continuación de un auténtico clásico de club. Xone:96, un mezclador de DJ analógico nuevo e intransigente, destinado a ser el corazón de su creatividad, toma el alma legendaria del aclamado Xone:92 y lo vuelve a ofrecer, mejorado y con conectividad digital de última generación. Está todo aquí. El sonido analógico enorme, detallado y que hace temblar el espacio que solo ofrece Xone. Un ecualizador de 4 bandas refinado y de precisión. Filtros duales Xone:VCF inigualables con distorsión armónica CRUNCH. Y una tarjeta de sonido USB dual de 32 bits (24 canales a 96 kHz) con certificación Traktor Scratch desde el primer momento.",
     imagenDetalle1: "https://i.postimg.cc/d3sNprr4/96-3-Quarter-Left-2800.jpg",
     imagenDetalle2: "https://i.postimg.cc/0yMWT8KR/96-Upright-Angle-2800.jpg",
+    stock: "20",
   },
   {
     id: 8,
@@ -113,6 +120,7 @@ const productos = [
     imagenDetalle1: "https://i.postimg.cc/hPHb7Vv6/Xone-K2-3-Quarter-2800.jpg",
     imagenDetalle2:
       "https://i.postimg.cc/NM5kHD8h/Xone-K2-Side-Profile-2800.jpg",
+    stock: "20",
   },
   {
     id: 9,
@@ -129,6 +137,7 @@ const productos = [
       "https://i.postimg.cc/15JXkShH/Denon-DJ-img-MC7000-Features.jpg",
     imagenDetalle2:
       "https://i.postimg.cc/QCv4tPvn/Denon-DJ-img-MC7000-Top-Intro.jpg",
+    stock: "20",
   },
   {
     id: 10,
@@ -143,6 +152,7 @@ const productos = [
       "Compatible con los reproductores multimedia de doble capa SC6000 , SC6000M y SC5000 , SC5000M , el LC6000 PRIME proporciona un control dedicado sobre la capa secundaria de los reproductores. El emparejamiento agiliza los flujos de trabajo de selección de pistas y amplía las capacidades creativas sin necesidad de una computadora.",
     imagenDetalle1: "https://i.postimg.cc/VkfGNjhw/1-LC6000-angle-web.png",
     imagenDetalle2: "https://i.postimg.cc/63tgCDj7/LC6000-setup-2-LC-web2.png",
+    stock: "10",
   },
   {
     id: 11,
@@ -159,6 +169,7 @@ const productos = [
       "https://i.postimg.cc/Wzr5K8HR/denondj-img-mcx8000gal1top.jpg",
     imagenDetalle2:
       "https://i.postimg.cc/mDkNxjhX/denondj-img-mcx8000gal3lhero.jpg",
+    stock: "5",
   },
   {
     id: 12,
@@ -175,6 +186,7 @@ const productos = [
       "https://i.postimg.cc/9Fm9s1SG/denondj-img-x1800gal1top.jpg",
     imagenDetalle2:
       "https://i.postimg.cc/Fz9f5sP9/denondj-img-x1800gal2back.jpg",
+    stock: "10",
   },
 ];
 

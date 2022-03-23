@@ -143,3 +143,19 @@
 }
 
 /* Detalle Producto Final */
+
+.centrado {
+  display: flex !important;
+  margin-left: 48%;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.centradoPrecio {
+  text-align: center;
+  margin-left: 2rem;
+}
+.imgContador {
+  width: 200px;
+  height: 200px;
+}

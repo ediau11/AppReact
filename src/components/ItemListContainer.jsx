@@ -39,7 +39,7 @@ function ItemListContainer() {
           </div>
         </div>
       ) : (
-        <ItemList lista={listaProductos} stock={5} initial={0} onAdd={onAdd} />
+        <ItemList lista={listaProductos} />
       )}
     </>
   );

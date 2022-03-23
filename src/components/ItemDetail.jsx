@@ -1,17 +1,23 @@
 import React from "react";
+import ItemCount from "./ItemCount";
+import { useState } from "react";
 
-function ItemDetail({ lista1 }) {
+function ItemDetail({ lista1, lista2 }) {
+  const [contador, setContador] = useState(1);
+
   const {
-    id,
     titulo,
     precio,
-    img,
-    descripcion,
     definicion,
     imagenDetalle1,
     imagenDetalle2,
     logoMarca,
+    stock,
   } = lista1;
+
+  const handleAgregar = () => {
+    const ItemMostrar = {};
+  };
   return (
     <>
       <img className=" mx-auto d-block" src={logoMarca} />
@@ -21,7 +27,16 @@ function ItemDetail({ lista1 }) {
         <p className="parrafoDetail">{definicion}</p>
         <img className="imagenDetalle1 rounded " src={imagenDetalle1}></img>
         <img className="imagenDetalle1 rounded " src={imagenDetalle2}></img>
+        <h3 className="centradoPrecio">{precio}$</h3>
       </div>
+      <ItemCount
+        stock={stock}
+        initial={1}
+        contador={contador}
+        setContador={setContador}
+        handleAgregar={handleAgregar}
+        lista1={lista1}
+      />
 
       <div></div>
     </>
