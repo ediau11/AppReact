@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "./Logos/LogoNav2.png";
+
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -9,7 +9,11 @@ const Footer = () => {
         <div className="container-fluid text-center text-md-left">
           <div className="row">
             <div className="col-md-6 mt-md-0 mt-3">
-              <img className="logoPrincipal" src={logo} alt="" />
+              <img
+                className="logoPrincipal"
+                src="https://i.postimg.cc/Y9Q7vqMG/LogoNav2.png}"
+                alt=""
+              />
               <img
                 src="https://see.fontimg.com/api/renderfont4/L7nD/eyJyIjoiZnMiLCJoIjozNSwidyI6MTAwMCwiZnMiOjM1LCJmZ2MiOiIjRkZGRkZGIiwiYmdjIjoiI0U4RTFFMSIsInQiOjF9/REonJ3MgSG91c2U/musieer.png"
                 className="navbar-brand logo"
