@@ -4,12 +4,13 @@ import ItemDetail from "./ItemDetail";
 export const ItemCount = ({
   stock,
   onAdd,
-  lista1,
   contador,
   setContador,
   handleAgregar,
+  lista1,
 }) => {
-  const { img, precio, titulo } = lista1;
+  const { img, precio, titulo, descripcion, logoMarca, imagenDetalle1 } =
+    lista1;
 
   const sumar = () => {
     if (contador === stock) {
@@ -29,29 +30,39 @@ export const ItemCount = ({
     <>
       <div className="offcanvas offcanvas-end" id="demo">
         <div className="offcanvas-header">
-          <h1 className="offcanvas-title text-center">Finalizar Compra!</h1>
+          <img src={logoMarca} className=" mx-auto d-block" />
           <button
             type="button"
             className="btn-close"
             data-bs-dismiss="offcanvas"
           ></button>
         </div>
-        <div className="offcanvas-body">
-          <h1 className="text-center">{titulo}</h1>
-          <img className="imgContador mx-auto d-block" src={img} alt="" />
-          <p className="text-center">{precio}$</p>
-          <button onClick={restar} class="btn btn-secondary" type="button">
-            -
-          </button>
 
-          <span className="mx-3">{contador}</span>
-          <button onClick={sumar} class="btn btn-secondary" type="button">
-            +
-          </button>
+        <div className="offcanvas-body">
+          <h3 className="text-center tituloItemCount">{titulo}</h3>
+          <p>{descripcion}</p>
+          <img
+            className="imgContador mx-auto d-block"
+            src={imagenDetalle1}
+            alt=""
+          />
+          <p className="text-center parrafoDetail">{precio}$</p>
+          <div className="botonesSumarRestar">
+            <button onClick={restar} className="btn btn-dark" type="button">
+              -
+            </button>
+
+            <span className="mx-3">{contador}</span>
+            <button onClick={sumar} className="btn btn-dark" type="button">
+              +
+            </button>
+          </div>
           <br />
-          <button onClick={lista1} className="btn btn-dark my-2">
-            Comprar
-          </button>
+          <div className="botonComprar">
+            <button onClick={handleAgregar} className="btn btn-dark my-2 ">
+              Comprar
+            </button>
+          </div>
         </div>
       </div>
 
@@ -59,7 +70,7 @@ export const ItemCount = ({
         <h3></h3>
 
         <button
-          className="btn btn-dark"
+          className="btn btn-dark botonDetalle1"
           type="button"
           data-bs-toggle="offcanvas"
           data-bs-target="#demo"

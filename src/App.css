@@ -144,13 +144,13 @@
 
 /* Detalle Producto Final */
 
+/* Estilos Contador Inicio */
 .centrado {
   display: flex !important;
   margin-left: 48%;
   align-items: center;
   margin-bottom: 2rem;
 }
-
 .centradoPrecio {
   text-align: center;
   margin-left: 2rem;
@@ -159,3 +159,20 @@
   width: 200px;
   height: 200px;
 }
+.botonesSumarRestar {
+  margin-left: 8.1rem;
+}
+.botonComprar {
+  margin-left: 8.5rem;
+}
+.text-center {
+  margin-bottom: 1.5rem !important ;
+}
+.botonDetalle1 {
+  margin-left: 48%;
+}
+.tituloDetail1 {
+  margin-left: 4rem;
+}
+
+/* Estilos contador final */

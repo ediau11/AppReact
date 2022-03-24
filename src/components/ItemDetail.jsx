@@ -2,22 +2,31 @@ import React from "react";
 import ItemCount from "./ItemCount";
 import { useState } from "react";
 
-function ItemDetail({ lista1, lista2 }) {
+function ItemDetail({ lista1 }) {
   const [contador, setContador] = useState(1);
-
   const {
+    id,
+    stock,
     titulo,
+    logoMarca,
     precio,
-    definicion,
     imagenDetalle1,
     imagenDetalle2,
-    logoMarca,
-    stock,
+    definicion,
+    descripcion,
   } = lista1;
 
   const handleAgregar = () => {
-    const ItemMostrar = {};
+    const itemTocart = {
+      id: id,
+      titulo: titulo,
+      precio: precio,
+      descripcion: descripcion,
+      stock: stock,
+    };
+    console.log(itemTocart);
   };
+
   return (
     <>
       <img className=" mx-auto d-block" src={logoMarca} />
