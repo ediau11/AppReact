@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ItemDetail from "./ItemDetail";
+import ItemDetail from "./ItemDetailContainer/ItemDetail";
 
 export const ItemCount = ({
   stock,
@@ -53,7 +53,7 @@ export const ItemCount = ({
             </button>
 
             <span className="mx-3">{contador}</span>
-            <button onClick={sumar} className="btn btn-dark" type="button">
+            <button onClick={sumar} className="btn btn-darkS" type="button">
               +
             </button>
           </div>

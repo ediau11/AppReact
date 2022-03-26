@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import ItemDetail from "./ItemDetail";
 import { useParams } from "react-router-dom";
-import { imprimirProductos } from "../mocks/baseDatos";
-import ItemCount from "./ItemCount";
+import { imprimirProductos } from "../../mocks/baseDatos";
+import ItemCount from "../ItemCount";
 
 function ItemDetailContainer() {
   const [item, setItem] = useState({});

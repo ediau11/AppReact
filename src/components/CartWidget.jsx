@@ -7,6 +7,9 @@ const CartWidget = () => {
       <div>
         <img src={Carrito} className="navbar-brand" />
       </div>
+      <h6>
+        <span className="badge bg-secondary">0</span>
+      </h6>
     </>
   );
 };

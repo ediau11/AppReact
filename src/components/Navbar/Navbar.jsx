@@ -10,7 +10,10 @@ const Navbar = () => {
     <div>
       <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
         <div className="container-fluid">
-          <img className="logoPrincipal" to="./" src={logo} alt="" />
+          <Link to="/">
+            {" "}
+            <img src={logo} alt="" />{" "}
+          </Link>
           <img
             src="https://see.fontimg.com/api/renderfont4/L7nD/eyJyIjoiZnMiLCJoIjozNSwidyI6MTAwMCwiZnMiOjM1LCJmZ2MiOiIjRkZGRkZGIiwiYmdjIjoiI0U4RTFFMSIsInQiOjF9/REonJ3MgSG91c2U/musieer.png"
             className="navbar-brand logo"
