@@ -3,14 +3,17 @@ import ItemDetail from "./ItemDetail";
 import { useParams } from "react-router-dom";
 import { imprimirProductos } from "../../mocks/baseDatos";
 import ItemCount from "../ItemCount";
+import { useCart } from "../../context/CartContext";
 
 function ItemDetailContainer() {
   const [item, setItem] = useState({});
   const [loading, setLoading] = useState(true);
 
   const { itemId } = useParams();
+  const { cart } = useCart();
 
   console.log(itemId);
+  console.log("carritoDetalle", cart);
 
   useEffect(() => {
     imprimirProductos()

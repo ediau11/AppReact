@@ -3,12 +3,14 @@ import { useParams } from "react-router-dom";
 import ItemCount from "../ItemCount";
 import ItemList from "../ItemListContainer/ItemList";
 import { imprimirProductos } from "../../mocks/baseDatos";
+import { useCart } from "../../context/CartContext";
 
 function ItemListContainer() {
   const [listaProductos, setListaProductos] = useState([]);
   const [loading, setLoading] = useState(true);
 
   const { categoryId } = useParams();
+  const { cart } = useCart();
 
   const onAdd = () => {};
 
@@ -29,7 +31,7 @@ function ItemListContainer() {
         setLoading(false);
       });
   }, [categoryId]);
-
+  console.log("carrito", cart);
   return (
     <>
       {loading ? (

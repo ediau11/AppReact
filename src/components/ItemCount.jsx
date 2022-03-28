@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ItemDetail from "./ItemDetailContainer/ItemDetail";
+import { Link } from "react-router-dom";
 
 export const ItemCount = ({
   stock,
@@ -62,6 +63,18 @@ export const ItemCount = ({
             <button onClick={handleAgregar} className="btn btn-dark my-2 ">
               Comprar
             </button>
+            <div class="btn-group">
+              <Link to="/carrito">
+                <button type="button" class="btn btn-primary">
+                  Ver Carrito
+                </button>
+              </Link>
+              <Link to="/productos">
+                <button type="button" class="btn btn-primary">
+                  Seguir Comprando
+                </button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>

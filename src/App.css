@@ -176,3 +176,14 @@
 }
 
 /* Estilos contador final */
+
+.cart {
+  width: 80%;
+  background-color: pink;
+  margin: auto;
+}
+.productoCarrito {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

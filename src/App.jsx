@@ -8,12 +8,12 @@ import Footer from "./components/Footer/Footer";
 import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
 import { BrowserRouter, Routes, Route, navigate } from "react-router-dom";
 import Inicio from "./components/Inicio.jsx";
-import { CustomContex } from "./context/CustomContex";
-import { useContext } from "react";
+import { CartProvider } from "./context/CartContext";
+import { Carrito } from "./././components/cart/Carrito";
 
 function App() {
   return (
-    <CustomContex>
+    <CartProvider>
       <BrowserRouter>
         <div className="App">
           <Navbar />
@@ -31,12 +31,13 @@ function App() {
               element={<ItemListContainer />}
             />
             <Route path="/detail/:itemId" element={<ItemDetailContainer />} />
+            <Route path="/Carrito" element={<Carrito />} />
           </Routes>
 
           <Footer />
         </div>
       </BrowserRouter>
-    </CustomContex>
+    </CartProvider>
   );
 }
 

@@ -1,8 +1,11 @@
 import React from "react";
 import ItemCount from "../ItemCount";
 import { useState } from "react";
+import { useCart } from "../../context/CartContext";
 
 function ItemDetail({ lista1 }) {
+  const { addItem, RemoveItem } = useCart();
+
   const [contador, setContador] = useState(1);
   const {
     id,
@@ -17,14 +20,7 @@ function ItemDetail({ lista1 }) {
   } = lista1;
 
   const handleAgregar = () => {
-    const itemTocart = {
-      id: id,
-      titulo: titulo,
-      precio: precio,
-      descripcion: descripcion,
-      stock: stock,
-    };
-    console.log(itemTocart);
+    addItem(lista1, contador);
   };
 
   return (

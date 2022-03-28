@@ -1,9 +1,11 @@
 import React from "react";
-import CartWidget from "../CartWidget";
+
 import logo from "./Logos/LogoNav2.png";
 import Instagram from "./iconosRedesSociales/IconoInstagram.svg";
 import Whatsapp from "./iconosRedesSociales/IconoWs.svg";
 import { Link } from "react-router-dom";
+
+import Carrito from "./Logos/CarritoCompra.png";
 
 const Navbar = () => {
   return (
@@ -67,7 +69,14 @@ const Navbar = () => {
               <img className="iconoInstagram" src={Whatsapp} alt="" />
             </div>
 
-            <CartWidget />
+            <div>
+              <Link to="Carrito">
+                <img src={Carrito} className="navbar-brand" />
+              </Link>
+            </div>
+            <h6>
+              <span className="badge bg-secondary">0</span>
+            </h6>
           </div>
         </div>
       </nav>
