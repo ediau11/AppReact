@@ -10,8 +10,12 @@ export const Carrito = () => {
 
   return (
     <>
-      {cart.map((producto) => (
-        <CartItem key={producto.item.id} productoProp={producto} />
+      {cart.map((producto, total) => (
+        <CartItem
+          key={producto.item.id}
+          productoProp={producto}
+          totalProp={total}
+        />
       ))}
       <button onClick={carritoContext.clear}>Vaciar Carrito</button>
     </>
