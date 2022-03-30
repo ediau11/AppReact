@@ -20,6 +20,7 @@ export const CartItem = ({ productoProp }) => {
         >
           Eliminar Producto
         </button>
+        <h1>{}</h1>
       </div>
     </div>
   );

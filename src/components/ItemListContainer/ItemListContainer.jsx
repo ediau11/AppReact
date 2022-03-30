@@ -12,8 +12,6 @@ function ItemListContainer() {
   const { categoryId } = useParams();
   const { cart } = useCart();
 
-  const onAdd = () => {};
-
   useEffect(() => {
     imprimirProductos()
       .then((respuesta) => {

@@ -4,9 +4,9 @@ import { CartContext } from "../../context/CartContext";
 import { CartItem } from "./CartItem";
 
 export const Carrito = () => {
-  const carritoContex = useContext(CartContext);
-  const cart = carritoContex.cart;
-  console.log(carritoContex);
+  const carritoContext = useContext(CartContext);
+  const cart = carritoContext.cart;
+  console.log(carritoContext);
 
   return (
     <>
@@ -14,6 +14,7 @@ export const Carrito = () => {
       {cart.map((producto) => (
         <CartItem key={producto.item.id} productoProp={producto} />
       ))}
+      <button onClick={carritoContext.clear}>Vaciar Carrito</button>
     </>
   );
 };

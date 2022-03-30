@@ -96,5 +96,3 @@ export const ItemCount = ({
 };
 
 export default ItemCount;
-
-// https://stackblitz.com/edit/react-uyod7j?file=src%2FContador.js

@@ -9,6 +9,12 @@ export const CartProvider = ({ children }) => {
       item: item,
       quantity: quantity,
     };
+
+    // const newCart = this.isInCart(item.idMeal)
+    //   ? this.updateItem(item.idMeal, item.quantity + 1)
+    //   : [...cart, item];
+    // setCart(newCart);
+
     console.log("new product", NewProduct);
     setCart((prev) => [...prev, { item, quantity }]);
   };
@@ -20,8 +26,17 @@ export const CartProvider = ({ children }) => {
     console.log(nuevosProductos, "nuevosProd");
   };
 
+  const clear = () => {
+    setCart([]);
+  };
+  // const total = (itemId) => {
+  //   const totalCompras = cart(
+  //     (producto) => producto.precio * producto.nombre !== itemId
+  //   );
+  // };
+
   return (
-    <CartContext.Provider value={{ cart, addItem, removeItem }}>
+    <CartContext.Provider value={{ cart, addItem, removeItem, clear }}>
       {children}
     </CartContext.Provider>
   );
