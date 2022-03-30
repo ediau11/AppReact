@@ -10,12 +10,6 @@ export const CartProvider = ({ children }) => {
       quantity: quantity,
     };
 
-    // const newCart = this.isInCart(item.idMeal)
-    //   ? this.updateItem(item.idMeal, item.quantity + 1)
-    //   : [...cart, item];
-    // setCart(newCart);
-
-    console.log("new product", NewProduct);
     setCart((prev) => [...prev, { item, quantity }]);
   };
   const removeItem = (itemId) => {
@@ -23,20 +17,21 @@ export const CartProvider = ({ children }) => {
       (producto) => producto.item.id !== itemId
     );
     setCart(nuevosProductos);
-    console.log(nuevosProductos, "nuevosProd");
   };
 
   const clear = () => {
     setCart([]);
   };
-  // const total = (itemId) => {
-  //   const totalCompras = cart(
-  //     (producto) => producto.precio * producto.nombre !== itemId
-  //   );
-  // };
+  const isInCart = (itemId) => {
+    const valor = cart.some((producto) => producto.item.id !== itemId);
+  };
+
+  console.log(isInCart);
 
   return (
-    <CartContext.Provider value={{ cart, addItem, removeItem, clear }}>
+    <CartContext.Provider
+      value={{ cart, addItem, removeItem, clear, isInCart }}
+    >
       {children}
     </CartContext.Provider>
   );

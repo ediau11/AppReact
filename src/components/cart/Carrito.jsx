@@ -10,7 +10,6 @@ export const Carrito = () => {
 
   return (
     <>
-      <p></p>
       {cart.map((producto) => (
         <CartItem key={producto.item.id} productoProp={producto} />
       ))}
