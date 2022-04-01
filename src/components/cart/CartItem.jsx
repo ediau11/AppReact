@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { CartContext } from "../../context/CartContext";
 
-export const CartItem = ({ productoProp, totalProp }) => {
+export const CartItem = ({ productoProp }) => {
   const carritoContex = useContext(CartContext);
   return (
     <>
@@ -23,7 +23,6 @@ export const CartItem = ({ productoProp, totalProp }) => {
           </button>
         </div>
       </div>
-      <p>total:$ {totalProp}</p>
     </>
   );
 };
