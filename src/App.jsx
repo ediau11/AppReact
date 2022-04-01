@@ -15,27 +15,29 @@ function App() {
   return (
     <CartProvider>
       <BrowserRouter>
-        <div className="App">
-          <Navbar />
+        <body className="color">
+          <div className="App">
+            <Navbar />
 
-          <Routes>
-            <Route path="/" element={<Inicio />} />
-            <Route path="/Productos" element={<ItemListContainer />} />
-            <Route
-              path="/Productos/:categoryId"
-              element={<ItemListContainer />}
-            />
+            <Routes>
+              <Route path="/" element={<Inicio />} />
+              <Route path="/Productos" element={<ItemListContainer />} />
+              <Route
+                path="/Productos/:categoryId"
+                element={<ItemListContainer />}
+              />
 
-            <Route
-              path="/Productos/:categoryId/:OtroParam"
-              element={<ItemListContainer />}
-            />
-            <Route path="/detail/:itemId" element={<ItemDetailContainer />} />
-            <Route path="/Carrito" element={<Carrito />} />
-          </Routes>
+              <Route
+                path="/Productos/:categoryId/:OtroParam"
+                element={<ItemListContainer />}
+              />
+              <Route path="/detail/:itemId" element={<ItemDetailContainer />} />
+              <Route path="/Carrito" element={<Carrito />} />
+            </Routes>
 
-          <Footer />
-        </div>
+            <Footer />
+          </div>
+        </body>
       </BrowserRouter>
     </CartProvider>
   );

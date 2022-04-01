@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ItemDetail from "./ItemDetailContainer/ItemDetail";
 import { Link } from "react-router-dom";
+import { CartContext } from "../context/CartContext";
 
 export const ItemCount = ({
   stock,
@@ -29,7 +30,7 @@ export const ItemCount = ({
 
   return (
     <>
-      <div className="offcanvas offcanvas-end" id="demo">
+      <div className="offcanvas offcanvas-start" id="demo">
         <div className="offcanvas-header">
           <img src={logoMarca} className=" mx-auto d-block" />
           <button
@@ -59,23 +60,26 @@ export const ItemCount = ({
             </button>
           </div>
           <br />
-          <div className="botonComprar">
-            <button onClick={handleAgregar} className="btn btn-dark my-2 ">
-              Comprar
-            </button>
-            <div class="btn-group">
-              <Link to="/carrito">
-                <button type="button" class="btn btn-primary">
-                  Ver Carrito
-                </button>
-              </Link>
-              <Link to="/productos">
-                <button type="button" class="btn btn-primary">
-                  Seguir Comprando
-                </button>
-              </Link>
+
+          {
+            <div className="botonComprar">
+              <button onClick={handleAgregar} className="btn btn-dark my-2 ">
+                Comprar
+              </button>
+              <div class="btn-group">
+                <Link to="/carrito">
+                  <button type="button" class="btn btn-primary">
+                    Ver Carrito
+                  </button>
+                </Link>
+                <Link to="/productos">
+                  <button type="button" class="btn btn-primary">
+                    Seguir Comprando
+                  </button>
+                </Link>
+              </div>
             </div>
-          </div>
+          }
         </div>
       </div>
 

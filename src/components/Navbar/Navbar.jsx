@@ -1,16 +1,18 @@
 import React from "react";
-
 import logo from "./Logos/LogoNav2.png";
 import Instagram from "./iconosRedesSociales/IconoInstagram.svg";
 import Whatsapp from "./iconosRedesSociales/IconoWs.svg";
 import { Link } from "react-router-dom";
-
 import Carrito from "./Logos/CarritoCompra.png";
+import { useContext } from "react";
+import { CartContext } from "../../context/CartContext";
 
 const Navbar = () => {
+  const carritoContext = useContext(CartContext);
+
   return (
     <div>
-      <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
+      <nav className="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
         <div className="container-fluid">
           <Link to="/">
             {" "}
@@ -74,9 +76,11 @@ const Navbar = () => {
                 <img src={Carrito} className="navbar-brand" />
               </Link>
             </div>
-            <h6>
-              <span className="badge bg-secondary">0</span>
-            </h6>
+            {carritoContext.getTotalCount() > 0 && (
+              <span className="badge bg-secondary">
+                {carritoContext.getTotalCount()}
+              </span>
+            )}
           </div>
         </div>
       </nav>

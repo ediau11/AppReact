@@ -39,6 +39,19 @@ export const CartProvider = ({ children }) => {
     return cart.some((producto) => producto.item.id === id);
   };
 
+  const getTotalCount = () => {
+    const totalCount = cart.reduce((acc, item) => acc + item.quantity, 0);
+    return totalCount;
+  };
+
+  const getTotalPrice = () => {
+    const totalPrice = cart.reduce(
+      (acc, producto) => acc + producto.quantity * producto.item.precio,
+      0
+    );
+    return totalPrice;
+  };
+
   return (
     <CartContext.Provider
       value={{
@@ -46,6 +59,8 @@ export const CartProvider = ({ children }) => {
         addItem,
         removeItem,
         clear,
+        getTotalCount,
+        getTotalPrice,
       }}
     >
       {children}

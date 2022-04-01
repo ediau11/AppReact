@@ -46,6 +46,7 @@ export const Carrito = () => {
         <CartItem key={producto.item} productoProp={producto} />
       ))}
       <button onClick={carritoContext.clear}>Vaciar Carrito</button>
+      <p>El precio final por su compra es: {carritoContext.getTotalPrice()}$</p>
       {/* <div>
         <form onSubmit={sendOrder}>
           <input type="text" placeholder="nombre" />
@@ -56,6 +57,30 @@ export const Carrito = () => {
       </div>
       <button>onClick={updateProducto}</button>
        */}
+      {/* {carritoContext.getTotalCount() > 0 && (
+        <span
+          style={{
+            backgroundColor: "white",
+            borderRadius: "50%",
+            width: "auto",
+            heigth: "50px",
+            padding: 10,
+            color: "black",
+            margin: "5px",
+          }}
+        >
+          {carritoContext.getTotalCount()}
+        </span>
+      )} */}
+
+      {cart.length === 0 && (
+        <div className="fondoCarritoVacio">
+          <h1 className="text-center">
+            {" "}
+            No agregaste Ningun Producto al Carrito :(
+          </h1>
+        </div>
+      )}
     </>
   );
 };
