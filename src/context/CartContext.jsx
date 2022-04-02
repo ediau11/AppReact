@@ -17,17 +17,17 @@ export const CartProvider = ({ children }) => {
       setCart(nuevosProductos);
     } else {
       const newProduct = {
-        item,
-        quantity,
+        item: item,
+        quantity: quantity,
       };
 
       setCart([...cart, newProduct]);
     }
   };
 
-  const removeItem = (itemId) => {
+  const removeItem = (id) => {
     const nuevosProductos = cart.filter(
-      (producto, quantity) => producto.item.id !== itemId + quantity
+      (producto, quantity) => producto.item.id > id + quantity
     );
     setCart(nuevosProductos);
   };
