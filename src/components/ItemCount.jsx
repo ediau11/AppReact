@@ -42,7 +42,7 @@ export const ItemCount = ({
 
         <div className="offcanvas-body">
           <h3 className="text-center tituloItemCount">{titulo}</h3>
-          <p>{descripcion}</p>
+
           <img
             className="imgContador mx-auto d-block"
             src={imagenDetalle1}
@@ -55,7 +55,7 @@ export const ItemCount = ({
             </button>
 
             <span className="mx-3">{contador}</span>
-            <button onClick={sumar} className="btn btn-darkS" type="button">
+            <button onClick={sumar} className="btn btn-dark" type="button">
               +
             </button>
           </div>
@@ -66,14 +66,15 @@ export const ItemCount = ({
               <button onClick={handleAgregar} className="btn btn-dark my-2 ">
                 Comprar
               </button>
-              <div class="btn-group">
+
+              <div class="">
                 <Link to="/carrito">
-                  <button type="button" class="btn btn-primary">
+                  <button type="button" class="btn btn-dark botonesSumarRestar">
                     Ver Carrito
                   </button>
                 </Link>
                 <Link to="/productos">
-                  <button type="button" class="btn btn-primary">
+                  <button type="button" class="btn btn-dark">
                     Seguir Comprando
                   </button>
                 </Link>

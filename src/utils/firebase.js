@@ -19,13 +19,7 @@ export default db;
 //     if (!categoryId) {
 //       setListaProductos(respuesta);
 //     } else {
-//       setListaProductos(
-//         respuesta.filter(
-//           (listaProductos) => listaProductos.categoria == categoryId
-//         )
-//       );
-//     }
-//   })
+//       setListaProductos(respuesta.filter((listaProductos) => listaProductos.categoria == categoryId));}})
 //   .finally(() => {
 //     setLoading(false);
 //     console.log(setLoading);

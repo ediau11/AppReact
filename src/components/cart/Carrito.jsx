@@ -45,8 +45,26 @@ export const Carrito = () => {
       {cart.map((producto) => (
         <CartItem key={producto.item} productoProp={producto} />
       ))}
-      <button onClick={carritoContext.clear}>Vaciar Carrito</button>
-      <p>El precio final por su compra es: {carritoContext.getTotalPrice()}$</p>
+
+      {
+        <div className="container text-center">
+          <button
+            className="btn btn-dark mx float-start "
+            onClick={carritoContext.clear}
+          >
+            Vaciar Carrito
+          </button>
+          <h6 className="float-end">
+            El precio final por su compra es: {carritoContext.getTotalPrice()}$
+          </h6>
+          <button
+            onClick={carritoContext.clear}
+            className="btn btn-dark margin  "
+          >
+            Finalizar Compra
+          </button>
+        </div>
+      }
       {/* <div>
         <form onSubmit={sendOrder}>
           <input type="text" placeholder="nombre" />
