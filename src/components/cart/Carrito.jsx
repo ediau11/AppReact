@@ -15,38 +15,13 @@ export const Carrito = () => {
   const cart = carritoContext.cart;
   console.log(carritoContext);
 
-  // const sendOrder = async (e) => {
-  //   e.preventDefault();
-  //   // console.log("evento formulario", e);
-  //   const nombre = e.target[0].value;
-  //   const telefono = e.target[1].value;
-  //   const email = e.target[2].value;
-  //   // ////////
-  //   const newObj = {
-  //     bayer: {
-  //       name: nombre,
-  //       phone: telefono,
-  //       email,
-  //     },
-  //     items: cart,
-  //     date: Timestamp.fromDate(new Date()),
-  //   };
-  //   const ordenColeccion = collection(db, "orders");
-  //   const docReference = await addDoc(ordenColeccion, newObj);
-  //   console.log(docReference, "referencia creada");
-  // };
-
-  // const updateProducto = async () => {
-  //   const docReference = doc(db, items, "1");
-  //   const docData = await getDoc(docReference);
-  // };
   return (
     <>
       {cart.map((producto) => (
         <CartItem key={producto.item} productoProp={producto} />
       ))}
 
-      {
+      {cart.length > 1 && (
         <div className="container text-center">
           <button
             className="btn btn-dark mx float-start "
@@ -57,26 +32,11 @@ export const Carrito = () => {
           <h6 className="float-end">
             El precio final por su compra es: {carritoContext.getTotalPrice()}$
           </h6>
-          <button
-            onClick={carritoContext.clear}
-            className="btn btn-dark margin  "
-          >
-            Finalizar Compra
-          </button>
         </div>
-      }
-      {/* <div>
-        <form onSubmit={sendOrder}>
-          <input type="text" placeholder="nombre" />
-          <input type="text" placeholder="telefono" />
-          <input type="email" placeholder="email" />
-          <button type="submit">Enviar orden</button>
-        </form>
-      </div>
-      <button>onClick={updateProducto}</button>
-       */}
-      {/* {carritoContext.getTotalCount() > 0 && (
-        <span
+      )}
+
+      {/* {carritoContext.getTotalCount() > 0 && ( */}
+      {/* <span
           style={{
             backgroundColor: "white",
             borderRadius: "50%",
@@ -94,7 +54,6 @@ export const Carrito = () => {
       {cart.length === 0 && (
         <div className="fondoCarritoVacio">
           <h1 className="text-center">
-            {" "}
             No agregaste Ningun Producto al Carrito :(
           </h1>
         </div>

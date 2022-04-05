@@ -203,12 +203,6 @@
   width: 100%;
   height: 400px;
 }
-
-/* .contenedorCarrito {
-  width: 100%;
-  height: 500px;
-  background-color: #e5e7eb;
-} */
 .color {
   background-color: #f3f3f3;
 }
@@ -224,4 +218,25 @@
 .margin {
   margin-left: 9.5rem;
   margin-top: 3rem;
+}
+.contenedorInicio {
+  width: 80%;
+  height: 500px;
+}
+
+.imagenesInicio {
+  width: 400px;
+  height: 400px;
+}
+
+.textoImagenes {
+  margin-top: 3rem;
+  text-align: center;
+}
+.rowInicio {
+  margin-right: 0 !important;
+}
+
+.botonesUnidos {
+  margin-left: 4rem;
 }

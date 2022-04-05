@@ -10,6 +10,7 @@ export const ItemCount = ({
   setContador,
   handleAgregar,
   lista1,
+  compra,
 }) => {
   const { img, precio, titulo, descripcion, logoMarca, imagenDetalle1 } =
     lista1;
@@ -49,38 +50,42 @@ export const ItemCount = ({
             alt=""
           />
           <p className="text-center parrafoDetail">{precio}$</p>
-          <div className="botonesSumarRestar">
-            <button onClick={restar} className="btn btn-dark" type="button">
-              -
-            </button>
+          {!compra && (
+            <div className="botonesSumarRestar">
+              <button onClick={restar} className="btn btn-dark" type="button">
+                -
+              </button>
 
-            <span className="mx-3">{contador}</span>
-            <button onClick={sumar} className="btn btn-dark" type="button">
-              +
-            </button>
-          </div>
+              <span className="mx-3">{contador}</span>
+              <button onClick={sumar} className="btn btn-dark" type="button">
+                +
+              </button>
+            </div>
+          )}
           <br />
 
-          {
-            <div className="botonComprar">
+          <div className="botonComprar">
+            {!compra && (
               <button onClick={handleAgregar} className="btn btn-dark my-2 ">
                 Comprar
               </button>
+            )}
+          </div>
+          {compra && (
+            <div className="btn-group botonesUnidos ">
+              <Link to="/carrito">
+                <button type="button" className="btn btn-dark   ">
+                  Ver Carrito
+                </button>
+              </Link>
 
-              <div class="">
-                <Link to="/carrito">
-                  <button type="button" class="btn btn-dark botonesSumarRestar">
-                    Ver Carrito
-                  </button>
-                </Link>
-                <Link to="/productos">
-                  <button type="button" class="btn btn-dark">
-                    Seguir Comprando
-                  </button>
-                </Link>
-              </div>
+              <Link to="/productos">
+                <button type="button" className="btn btn-dark  ">
+                  Seguir Comprando
+                </button>
+              </Link>
             </div>
-          }
+          )}
         </div>
       </div>
 

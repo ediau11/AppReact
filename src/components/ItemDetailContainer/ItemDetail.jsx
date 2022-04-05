@@ -5,7 +5,7 @@ import { useCart } from "../../context/CartContext";
 
 function ItemDetail({ lista1 }) {
   const { addItem, RemoveItem } = useCart();
-
+  const [compra, setCompra] = useState(false);
   const [contador, setContador] = useState(1);
   const {
     id,
@@ -21,6 +21,7 @@ function ItemDetail({ lista1 }) {
 
   const handleAgregar = () => {
     addItem(lista1, contador);
+    setCompra(true);
   };
 
   return (
@@ -41,6 +42,7 @@ function ItemDetail({ lista1 }) {
         setContador={setContador}
         handleAgregar={handleAgregar}
         lista1={lista1}
+        compra={compra}
       />
 
       <div></div>
