@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { CartContext } from "../../context/CartContext";
 import { CartItem } from "./CartItem";
@@ -72,11 +73,16 @@ export const Carrito = () => {
 
       {cart.length === 0 && (
         <div className="fondoCarritoVacio">
-          <h1 className="text-center">
+          <h1 className="text-center textoCarritoVacio">
             No agregaste Ningun Producto al Carrito :(
           </h1>
         </div>
       )}
+      <Link to="/productos">
+        <button type="button" className="btn btn-dark  ">
+          Seguir Comprando
+        </button>
+      </Link>
     </>
   );
 };
