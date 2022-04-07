@@ -240,3 +240,13 @@
 .botonesUnidos {
   margin-left: 4rem;
 }
+
+.estilosFormulario {
+  padding: 20px;
+  margin-top: 2rem;
+  margin-left: 25%;
+  display: inline-grid;
+}
+.inputFormulario {
+  width: 20rem;
+}

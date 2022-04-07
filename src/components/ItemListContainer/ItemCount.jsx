@@ -1,19 +1,15 @@
-import React, { useState } from "react";
-import ItemDetail from "./ItemDetailContainer/ItemDetail";
+import React from "react";
 import { Link } from "react-router-dom";
-import { CartContext } from "../context/CartContext";
 
 export const ItemCount = ({
   stock,
-  onAdd,
   contador,
   setContador,
   handleAgregar,
   lista1,
   compra,
 }) => {
-  const { img, precio, titulo, descripcion, logoMarca, imagenDetalle1 } =
-    lista1;
+  const { precio, titulo, logoMarca, imagenDetalle1 } = lista1;
 
   const sumar = () => {
     if (contador === stock) {

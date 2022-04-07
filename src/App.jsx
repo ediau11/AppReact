@@ -1,15 +1,15 @@
 import React from "react";
 import "./App.css";
-import Navbar from "./components/Navbar/Navbar";
-import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
-import Footer from "./components/Footer/Footer";
+import Inicio from "../src/components/inicio/Inicio";
+import Navbar from "./components/Navbar/Navbar";
+import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
-import { BrowserRouter, Routes, Route, navigate } from "react-router-dom";
-import Inicio from "./components/Inicio.jsx";
-import { CartProvider } from "./context/CartContext";
+import Footer from "./components/Footer/Footer";
 import { Carrito } from "./././components/cart/Carrito";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { CartProvider } from "./context/CartContext";
 
 function App() {
   return (

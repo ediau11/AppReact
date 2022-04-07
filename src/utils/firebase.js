@@ -14,13 +14,3 @@ const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app);
 
 export default db;
-// imprimirProductos()
-//   .then((respuesta) => {
-//     if (!categoryId) {
-//       setListaProductos(respuesta);
-//     } else {
-//       setListaProductos(respuesta.filter((listaProductos) => listaProductos.categoria == categoryId));}})
-//   .finally(() => {
-//     setLoading(false);
-//     console.log(setLoading);
-//   });

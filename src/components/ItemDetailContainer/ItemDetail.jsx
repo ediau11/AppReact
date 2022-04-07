@@ -1,5 +1,5 @@
 import React from "react";
-import ItemCount from "../ItemCount";
+import ItemCount from "../ItemListContainer/ItemCount";
 import { useState } from "react";
 import { useCart } from "../../context/CartContext";
 
