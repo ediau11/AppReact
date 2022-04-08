@@ -61,14 +61,29 @@ export const Carrito = () => {
       )}
 
       {cart.length >= 1 && (
-        <form className="estilosFormulario" onSubmit={sendOrder}>
-          <input className="inputFormulario" type="text" placeholder="nombre" />
-          <input type="text" placeholder="phone" />
-          <input type="email" placeholder="email" />
-          <button className="btn btn-dark" type="submit">
-            Enviar Orden
-          </button>
-        </form>
+        <div className=" container containerFormulario text-center">
+          <form
+            className="contenedorFormulario"
+            onSubmit={sendOrder}
+            role="form"
+          >
+            <div class="form-group">
+              <label for="text">Nombre:</label>
+              <input type="text" className="form-control" id="email" />
+            </div>
+            <div class="form-group">
+              <label for="pwd">Telefono:</label>
+              <input type="text" className="form-control" id="pwd" />
+            </div>
+            <div class="form-group">
+              <label for="pwd">Email:</label>
+              <input type="email" className="form-control" id="pwd" />
+            </div>
+            <button type="submit" className="btn btn-dark">
+              Submit
+            </button>
+          </form>
+        </div>
       )}
 
       {cart.length === 0 && (
@@ -78,11 +93,6 @@ export const Carrito = () => {
           </h1>
         </div>
       )}
-      <Link to="/productos">
-        <button type="button" className="btn btn-dark  ">
-          Seguir Comprando
-        </button>
-      </Link>
     </>
   );
 };

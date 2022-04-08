@@ -241,15 +241,7 @@
   margin-left: 4rem;
 }
 
-.estilosFormulario {
-  padding: 20px;
-  margin-top: 2rem;
-  margin-left: 25%;
-  display: inline-grid;
-}
-.inputFormulario {
-  width: 20rem;
-}
-.textoCarritoVacio {
-  margin-top: 3rem;
+.contenedorFormulario {
+  background-color: #e5e7eb;
+  margin-top: 5rem;
 }
