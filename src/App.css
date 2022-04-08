@@ -1,5 +1,4 @@
 /* Navbar Inicio */
-
 .navbar {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
@@ -27,30 +26,69 @@
 .ubicacionLogos {
   margin-right: 2.5rem;
 }
-
 /* Navbar Final */
 
 /* Estilos home inicio */
-
+.imagenInicio {
+  width: 100%;
+  padding-top: 50px;
+}
+.contenedorImagen {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+.texto-encima {
+  display: flex;
+  position: absolute;
+  top: 60px;
+  left: 50px;
+  color: white;
+  font-size: 5rem;
+  font-style: "Roboto", sans-serif;
+}
+.texto-encima2 {
+  display: flex;
+  position: absolute;
+  top: 130px;
+  left: 30px;
+  color: white;
+  font-size: 5rem;
+  font-style: "Roboto", sans-serif;
+}
+.texto-encima3 {
+  display: flex;
+  position: absolute;
+  top: 130px;
+  left: 80px;
+  color: white;
+  font-size: 5rem;
+  font-family: "Roboto", sans-serif;
+}
+.botonInicio {
+  background-color: white !important;
+  color: black !important;
+  border: none !important;
+  width: 130px;
+  height: 35px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400 !important;
+}
+.contenedorImagenInicio {
+  width: 300px;
+  margin-top: 2rem;
+  margin-left: 5.5rem;
+}
 .row {
   margin-top: 2rem !important ;
 }
-.galeria img {
-  width: 100%;
-  height: 300px;
-  padding: 15px;
-  object-fit: cover;
-}
-
 /* Estilos home final */
 
 /* Footer inicio */
-
 .pt-4 {
   background-color: rgba(5, 5, 5, 0.91);
   margin-top: 2rem;
 }
-
 .page-footer {
   padding: 1px;
 }
@@ -69,11 +107,9 @@
 .colorLinks1 {
   color: white;
 }
-
 /* Footer final */
 
 /* Card Productos inicio */
-
 .card {
   width: 200px;
   margin-top: 20px;
@@ -105,24 +141,22 @@
     #ffffff
   );
 }
-
 .flex-wrap {
   margin-top: 2rem;
 }
-
 /*Card Productos Final  */
 
 /* ItemCount Inicio */
-
 .botonSumar {
   margin-left: 20px;
   padding: 2px;
 }
-
+.botonesUnidos {
+  margin-left: 4rem;
+}
 /* ItemCount Final */
 
 /* Detalle Producto Inicio */
-
 .tituloDetalle {
   text-align: center;
   margin-top: 4rem;
@@ -150,7 +184,6 @@
   height: 120px;
   margin-top: 2rem;
 }
-
 /* Detalle Producto Final */
 
 /* Estilos Contador Inicio */
@@ -183,9 +216,9 @@
 .tituloDetail1 {
   margin-left: 4rem;
 }
-
 /* Estilos contador final */
 
+/* Estilos carrito Inicio */
 .cart {
   width: 80%;
   background-color: pink;
@@ -202,6 +235,7 @@
 .fondoCarritoVacio {
   width: 100%;
   height: 400px;
+  margin-top: 10rem;
 }
 .color {
   background-color: #f3f3f3;
@@ -215,33 +249,13 @@
   background-color: #e5e7eb;
   margin-top: 5rem;
 }
-.margin {
-  margin-left: 9.5rem;
-  margin-top: 3rem;
-}
-.contenedorInicio {
-  width: 80%;
-  height: 500px;
-}
+/* Estilos carrito final */
 
-.imagenesInicio {
-  width: 400px;
-  height: 400px;
-}
-
-.textoImagenes {
-  margin-top: 3rem;
-  text-align: center;
-}
-.rowInicio {
-  margin-right: 0 !important;
-}
-
-.botonesUnidos {
-  margin-left: 4rem;
-}
-
+/* Estilos Formulario */
 .contenedorFormulario {
   background-color: #e5e7eb;
   margin-top: 5rem;
+  max-width: 50%;
+  margin-left: 25%;
 }
+/* Estilos Formulario final */
