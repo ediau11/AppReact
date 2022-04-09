@@ -23,6 +23,7 @@ function ItemDetailContainer() {
       });
 
       setItem(dataItems);
+      setLoading(false);
 
       const queryDoc = doc(db, "Items", itemId);
       const respuesta1 = await getDoc(queryDoc);
@@ -39,6 +40,13 @@ function ItemDetailContainer() {
   return (
     <>
       <ItemDetail lista1={item} />
+      {item < 1 && (
+        <div class="d-flex justify-content-center">
+          <div class="spinner-border" role="status">
+            <span class="visually-hidden">{loading}</span>
+          </div>
+        </div>
+      )}
     </>
   );
 }

@@ -28,6 +28,7 @@ function ItemListContainer() {
         );
       } else {
         setListaProductos(dataItems);
+        setLoading(false);
       }
     };
 
@@ -35,7 +36,18 @@ function ItemListContainer() {
   }, [categoryId]);
 
   console.log("carrito", cart);
-  return <ItemList lista={listaProductos} />;
+  return (
+    <>
+      <ItemList lista={listaProductos} />
+      {listaProductos < 1 && (
+        <div class="d-flex justify-content-center">
+          <div class="spinner-border" role="status">
+            <span class="visually-hidden">{loading}</span>
+          </div>
+        </div>
+      )}
+    </>
+  );
 }
 
 export default ItemListContainer;
