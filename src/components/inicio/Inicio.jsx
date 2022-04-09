@@ -33,11 +33,34 @@ function inicio() {
           </Link>
         </div>
       </div>
-      <h1 className="text-center">Nuestras Marcas</h1>
+      <h1 className="text-center textoInicio">Nuestras Marcas</h1>
 
-      <div class="row">
+      <div class="row margenContenedor">
         <div class="col">
-          <div className="Container">
+          <div>
+            <img
+              className="mx-auto d-block"
+              src="https://i.postimg.cc/rsq7J38P/logo-Pioneer.png"
+              alt=""
+            />
+          </div>
+          <div className="Container contenedorInicio">
+            <img
+              src="https://i.postimg.cc/c4KQwwJf/hdj-cx-home-carousel-1440x600.jpg"
+              alt=""
+              className="contenedorImagenInicio"
+            />
+          </div>
+        </div>
+        <div class="col">
+          <div>
+            <img
+              className="mx-auto d-block"
+              src="https://i.postimg.cc/G2nvZ1Tq/logo-Allem.png"
+              alt=""
+            />
+          </div>
+          <div className="Container contenedorInicio">
             <img
               src="https://i.postimg.cc/Gm55yztk/sophisticated-design-1053x1053-sp2.jpg"
               alt=""
@@ -46,16 +69,14 @@ function inicio() {
           </div>
         </div>
         <div class="col">
-          <div className="Container">
+          <div>
             <img
-              src="https://i.postimg.cc/Gm55yztk/sophisticated-design-1053x1053-sp2.jpg"
+              className="mx-auto d-block"
+              src="https://i.postimg.cc/L8ftvXnn/logo-Denon.png"
               alt=""
-              className="contenedorImagenInicio"
             />
           </div>
-        </div>
-        <div class="col">
-          <div className="Container">
+          <div className="Container contenedorInicio">
             <img
               src="https://i.postimg.cc/Gm55yztk/sophisticated-design-1053x1053-sp2.jpg"
               alt=""

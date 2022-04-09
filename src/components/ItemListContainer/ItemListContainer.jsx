@@ -20,11 +20,15 @@ function ItemListContainer() {
         return { id: doc.id, ...doc.data() };
       });
 
-      setListaProductos(
-        dataItems.filter(
-          (listaProductos) => listaProductos.categoria == categoryId
-        )
-      );
+      if (categoryId) {
+        setListaProductos(
+          dataItems.filter(
+            (listaProductos) => listaProductos.categoria == categoryId
+          )
+        );
+      } else {
+        setListaProductos(dataItems);
+      }
     };
 
     getData();
