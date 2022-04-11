@@ -44,13 +44,15 @@ function inicio() {
               alt=""
             />
           </div>
-          <div className="Container contenedorInicio">
-            <img
-              src="https://i.postimg.cc/c4KQwwJf/hdj-cx-home-carousel-1440x600.jpg"
-              alt=""
-              className="contenedorImagenInicio"
-            />
-          </div>
+          <a target="_blank" href="https://www.pioneerdj.com/en-us/">
+            <div className="Container contenedorInicio">
+              <img
+                src="https://i.postimg.cc/c4KQwwJf/hdj-cx-home-carousel-1440x600.jpg"
+                alt=""
+                className="contenedorImagenInicio"
+              />
+            </div>
+          </a>
         </div>
         <div class="col">
           <div>
@@ -78,7 +80,7 @@ function inicio() {
           </div>
           <div className="Container contenedorInicio">
             <img
-              src="https://i.postimg.cc/Gm55yztk/sophisticated-design-1053x1053-sp2.jpg"
+              src="https://i.postimg.cc/tC7B24zj/homepage-0mp.png"
               alt=""
               className="contenedorImagenInicio"
             />
