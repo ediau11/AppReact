@@ -1,12 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-function inicio() {
+function Inicio() {
   return (
     <>
       <div className="container-fluid contenedorImagen">
         <img
-          className="img-fluid imagenInicio"
+          className="img-fluid imagenInicio fade-in-image"
           src="https://www.pioneerdj.com/-/media/project/pioneer/pioneerdj/home/carousel/2022/ddj-rev1_web_home-crousel_1440x600.jpg"
           alt=""
         />
@@ -91,4 +91,4 @@ function inicio() {
   );
 }
 
-export default inicio;
+export default Inicio;

@@ -33,6 +33,9 @@
 .imagenInicio {
   width: 100%;
   padding-top: 50px;
+  height: 500px !important;
+  object-fit: cover;
+  background-color: black;
 }
 .contenedorImagen {
   position: relative;
@@ -42,7 +45,7 @@
 .texto-encima {
   display: flex;
   position: absolute;
-  top: 60px;
+  top: 80px;
   left: 50px;
   color: white;
   font-size: 5rem;
@@ -51,7 +54,7 @@
 .texto-encima2 {
   display: flex;
   position: absolute;
-  top: 130px;
+  top: 150px;
   left: 30px;
   color: white;
   font-size: 5rem;
@@ -60,8 +63,8 @@
 .texto-encima3 {
   display: flex;
   position: absolute;
-  top: 130px;
-  left: 80px;
+  top: 180px;
+  left: 75px;
   color: white;
   font-size: 5rem;
   font-family: "Roboto", sans-serif;
@@ -290,4 +293,59 @@
 
 .spinner-border {
   margin-top: 2rem !important;
+}
+.contenedorImagenPrincipal {
+  width: 100%;
+  height: 300px;
+}
+.fade-in-image {
+  animation: fadeIn 2s;
+  -webkit-animation: fadeIn 2s;
+  -moz-animation: fadeIn 2s;
+  -o-animation: fadeIn 2s;
+  -ms-animation: fadeIn 2s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

@@ -23,7 +23,6 @@ function ItemDetailContainer() {
       });
 
       setItem(dataItems);
-      setLoading(false);
 
       const queryDoc = doc(db, "Items", itemId);
       const respuesta1 = await getDoc(queryDoc);
@@ -33,7 +32,7 @@ function ItemDetailContainer() {
 
       setItem(nuevoDocumento);
     };
-
+    setLoading(false);
     getData();
   }, [itemId]);
 

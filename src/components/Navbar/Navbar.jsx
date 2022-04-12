@@ -16,13 +16,12 @@ const Navbar = () => {
         <div className="container-fluid">
           <Link to="/">
             {" "}
-            <img src={logo} alt="" />{" "}
+            <img src={logo} alt="Imagen logo principal" />{" "}
+            <img
+              src="https://see.fontimg.com/api/renderfont4/L7nD/eyJyIjoiZnMiLCJoIjozNSwidyI6MTAwMCwiZnMiOjM1LCJmZ2MiOiIjRkZGRkZGIiwiYmdjIjoiI0U4RTFFMSIsInQiOjF9/REonJ3MgSG91c2U/musieer.png"
+              className="navbar-brand logo"
+            />
           </Link>
-          <img
-            src="https://see.fontimg.com/api/renderfont4/L7nD/eyJyIjoiZnMiLCJoIjozNSwidyI6MTAwMCwiZnMiOjM1LCJmZ2MiOiIjRkZGRkZGIiwiYmdjIjoiI0U4RTFFMSIsInQiOjF9/REonJ3MgSG91c2U/musieer.png"
-            className="navbar-brand logo"
-          />
-
           <h4 className="colorLogo"></h4>
           <button
             className="navbar-toggler"

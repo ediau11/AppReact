@@ -4,6 +4,7 @@ import { CartContext } from "../../context/CartContext";
 import { CartItem } from "./CartItem";
 import { db } from "../../utils/firebase";
 import { addDoc, Timestamp, collection } from "firebase/firestore";
+import swal from "sweetalert";
 export const Carrito = () => {
   const carritoContext = useContext(CartContext);
   const cart = carritoContext.cart;
@@ -30,9 +31,13 @@ export const Carrito = () => {
 
     console.log(newOrder);
     const refOrder = await addDoc(orderCollection, newOrder);
-    alert(`gracias por compra, tu numero identifacador es: ${refOrder.id}`);
+    swal({
+      title: "Muchas gracias por tu compra",
+      text: `Tu numero identificador es: ${refOrder.id}`,
+      icon: "success",
+      timer: 3000,
+    });
   };
-
   return (
     <>
       {cart.map((producto) => (
@@ -77,7 +82,7 @@ export const Carrito = () => {
               <input type="email" className="form-control" id="pwd" />
             </div>
             <button type="submit" className="btn btn-dark">
-              Submit
+              Enviar Orden!
             </button>
           </form>
         </div>
