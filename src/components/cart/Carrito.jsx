@@ -35,7 +35,7 @@ export const Carrito = () => {
 
       {cart.length >= 1 && (
         <div>
-          <h5 className="float-end textoCompra">
+          <h5 className="textoPrecioFinal ">
             El precio final por su compra es: {carritoContext.getTotalPrice()}$
           </h5>
         </div>

@@ -18,7 +18,7 @@ const Footer = () => {
                 className="navbar-brand logo"
               />
 
-              <p className="colorTexto">
+              <p className="colorTexto textoCompra">
                 Distribuidor n°1 de Pioneer en Argentina!
               </p>
             </div>
@@ -26,25 +26,36 @@ const Footer = () => {
             <hr className="clearfix w-100 d-md-none pb-0" />
 
             <div className="col-md-3 mb-md-0 mb-3">
-              <h5 className="text-uppercase colorLinks1">Productos</h5>
+              <h5 className="text-uppercase colorLinks1 textoCompra">
+                Productos
+              </h5>
               <ul className="list-unstyled">
                 <li>
-                  <Link className="colorLinks" to="/productos">
+                  <Link className="colorLinks textoCompra" to="/productos">
                     Nuestros Productos
                   </Link>
                 </li>
                 <li>
-                  <Link className="colorLinks" to="/productos/pioneer">
+                  <Link
+                    className="colorLinks textoCompra"
+                    to="/productos/pioneer"
+                  >
                     Pioneer
                   </Link>
                 </li>
                 <li>
-                  <Link className="colorLinks" to="/productos/allem">
+                  <Link
+                    className="colorLinks textoCompra"
+                    to="/productos/allem"
+                  >
                     Allen and Heath
                   </Link>
                 </li>
                 <li>
-                  <Link className="colorLinks" to="/productos/denom">
+                  <Link
+                    className="colorLinks textoCompra"
+                    to="/productos/denom"
+                  >
                     Denom DJ
                   </Link>
                 </li>
@@ -52,25 +63,25 @@ const Footer = () => {
             </div>
 
             <div className="col-md-3 mb-md-0 mb-3">
-              <h5 className="text-uppercase colorLinks1">About</h5>
+              <h5 className="text-uppercase colorLinks1 textoCompra">About</h5>
               <ul className="list-unstyled">
                 <li>
-                  <Link className="colorLinks" to="nosotrs">
+                  <Link className="colorLinks textoCompra" to="nosotrs">
                     Sobre Nosotros
                   </Link>
                 </li>
                 <li>
-                  <Link className="colorLinks" to="">
+                  <Link className="colorLinks textoCompra" to="">
                     Preguntas Frecuentes
                   </Link>
                 </li>
                 <li>
-                  <Link className="colorLinks" to="#!">
+                  <Link className="colorLinks textoCompra" to="#!">
                     Medios de Pago
                   </Link>
                 </li>
                 <li>
-                  <Link className="colorLinks" to="#!">
+                  <Link className="colorLinks textoCompra" to="#!">
                     Redes Sociales
                   </Link>
                 </li>
@@ -79,7 +90,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="footer-copyright text-center py-3 colorTexto">
+        <div className="footer-copyright text-center py-3 colorTexto textoCompra">
           © 2022 Copyright: Eduardo Arcila
         </div>
       </footer>

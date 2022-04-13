@@ -11,7 +11,7 @@ function Inicio() {
           alt=""
         />
 
-        <div className="texto-encima">
+        <div className="texto-encima textoCompra">
           <h1
             className="heroMain__title heading heading--1"
             id="hero-title-tag"
@@ -19,7 +19,7 @@ function Inicio() {
             DDJ-REV1
           </h1>
         </div>
-        <div className="texto-encima2">
+        <div className="texto-encima2 textoCompra">
           <h3
             className="heroMain__title heading heading--1 "
             id="hero-title-tag"
@@ -29,7 +29,9 @@ function Inicio() {
         </div>
         <div className="texto-encima3 ">
           <Link to={"/productos"}>
-            <button className="btn btn-primary botonInicio">Detalles</button>
+            <button className="  botonAnimationContainer textoCompra">
+              Detalles
+            </button>
           </Link>
         </div>
       </div>
@@ -62,29 +64,33 @@ function Inicio() {
               alt=""
             />
           </div>
-          <div className="Container contenedorInicio">
-            <img
-              src="https://i.postimg.cc/Gm55yztk/sophisticated-design-1053x1053-sp2.jpg"
-              alt=""
-              className="contenedorImagenInicio"
-            />
-          </div>
+          <a target="_blank" href="https://www.allen-heath.com/">
+            <div className="Container contenedorInicio">
+              <img
+                src="https://i.postimg.cc/Gm55yztk/sophisticated-design-1053x1053-sp2.jpg"
+                alt=""
+                className="contenedorImagenInicio"
+              />
+            </div>
+          </a>
         </div>
         <div class="col">
-          <div>
-            <img
-              className="mx-auto d-block"
-              src="https://i.postimg.cc/L8ftvXnn/logo-Denon.png"
-              alt=""
-            />
-          </div>
-          <div className="Container contenedorInicio">
-            <img
-              src="https://i.postimg.cc/tC7B24zj/homepage-0mp.png"
-              alt=""
-              className="contenedorImagenInicio"
-            />
-          </div>
+          <a target="_blank" href="https://www.denondj.com/">
+            <div>
+              <img
+                className="mx-auto d-block"
+                src="https://i.postimg.cc/L8ftvXnn/logo-Denon.png"
+                alt=""
+              />
+            </div>
+            <div className="Container contenedorInicio">
+              <img
+                src="https://i.postimg.cc/tC7B24zj/homepage-0mp.png"
+                alt=""
+                className="contenedorImagenInicio"
+              />
+            </div>
+          </a>
         </div>
       </div>
     </>
