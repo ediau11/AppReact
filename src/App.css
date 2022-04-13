@@ -112,6 +112,7 @@
 }
 .margenContenedor {
   margin-right: 0 !important;
+  background-color: #f3f3f3;
 }
 /* Estilos home final */
 
@@ -242,7 +243,6 @@
   margin-bottom: 1.5rem !important ;
 }
 .botonDetalle1 {
-  margin-left: 48%;
 }
 .tituloDetail1 {
   margin-left: 4rem;
@@ -348,4 +348,61 @@
   100% {
     opacity: 1;
   }
+}
+
+.botonAnimation {
+  display: flex;
+  color: #fff;
+  text-decoration: none;
+  border: 2.4px solid #3655b2;
+  margin-left: 47%;
+  border-radius: 5px;
+  background-color: black;
+  padding: 7px 20px;
+}
+.botonAnimation:hover {
+  animation: pulsate 1s ease-in-out;
+}
+
+@keyframes pulsate {
+  0% {
+    box-shadow: 0 0 25px #5ddcff, 0 0 50px #4e00c2;
+  }
+}
+
+.botonAnimationContainer {
+  display: inline-flex;
+  color: #fff;
+  text-decoration: none !important;
+  border: 2.4px solid #27386c;
+  border-radius: 5px;
+  background-color: black;
+  padding: 7px 20px;
+}
+.botonAnimationContainer:hover {
+  animation: pulsate 1s ease-in-out;
+}
+.botonTerminarCompra {
+  margin-right: 45% !important;
+  display: inline-flex;
+}
+.botonAnimationCarrito {
+  color: white;
+  border: 1px solid #3655b2;
+  background-color: #212529;
+  border-radius: 5px;
+  height: 40px;
+}
+.botonAnimationCarrito:hover {
+  animation: pulsate 1s ease-in-out;
+}
+.textoCompra {
+  font-family: Montserrat;
+  font-weight: 400;
+}
+.margenBotones {
+  margin-left: 3rem;
+}
+.margenBotonModal {
+  margin-left: 8rem;
 }

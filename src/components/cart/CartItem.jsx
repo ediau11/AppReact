@@ -11,13 +11,15 @@ export const CartItem = ({ productoProp }) => {
           src={productoProp.item.imagenDetalle1}
           alt=""
         />
-        <h4>Su producto escogido fue: {productoProp.item.titulo}</h4>
-        <h5>Cantidad: {productoProp.quantity}</h5>
-        <h6>Precio: {productoProp.item.precio}</h6>
+        <h4 className="textoCompra">
+          Su producto escogido fue: {productoProp.item.titulo}
+        </h4>
+        <h5 className="textoCompra">Cantidad: {productoProp.quantity}</h5>
+        <h6 className="textoCompra">Precio: {productoProp.item.precio}</h6>
 
         <button
           onClick={() => carritoContext.removeItem(productoProp.item.id)}
-          className="btn btn-dark "
+          className="btn btn-dark textoCompra "
         >
           Eliminar Producto
         </button>

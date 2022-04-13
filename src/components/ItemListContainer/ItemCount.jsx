@@ -38,14 +38,14 @@ export const ItemCount = ({
         </div>
 
         <div className="offcanvas-body">
-          <h3 className="text-center tituloItemCount">{titulo}</h3>
+          <h3 className="text-center  textoCompra ">{titulo}</h3>
 
           <img
             className="imgContador mx-auto d-block"
             src={imagenDetalle1}
             alt=""
           />
-          <p className="text-center parrafoDetail">{precio}$</p>
+          <p className="text-center parrafoDetail textoCompra">{precio}$</p>
           {!compra && (
             <div className="botonesSumarRestar">
               <button onClick={restar} className="btn btn-dark" type="button">
@@ -60,26 +60,37 @@ export const ItemCount = ({
           )}
           <br />
 
-          <div className="botonComprar">
+          <div className="textoCompra ">
             {!compra && (
-              <button onClick={handleAgregar} className="btn btn-dark my-2 ">
+              <button
+                onClick={handleAgregar}
+                className="textoCompra botonAnimation margenBotonModal "
+              >
                 Comprar
               </button>
             )}
           </div>
           {compra && (
-            <div className="btn-group botonesUnidos ">
-              <Link to="/carrito">
-                <button type="button" className="btn btn-dark   ">
-                  Ver Carrito
-                </button>
-              </Link>
+            <div className="btn-group margenBotones">
+              <div className=" ">
+                <Link to="/carrito">
+                  <button
+                    type="button"
+                    className="  botonAnimationCarrito textoCompra "
+                  >
+                    Ver Carrito
+                  </button>
+                </Link>
 
-              <Link to="/productos">
-                <button type="button" className="btn btn-dark  ">
-                  Seguir Comprando
-                </button>
-              </Link>
+                <Link to="/productos">
+                  <button
+                    type="button"
+                    className=" botonAnimationCarrito textoCompra "
+                  >
+                    Seguir Comprando
+                  </button>
+                </Link>
+              </div>
             </div>
           )}
         </div>
@@ -89,7 +100,7 @@ export const ItemCount = ({
         <h3></h3>
 
         <button
-          className="btn btn-dark botonDetalle1"
+          className="botonAnimation botonDetalle1 textoCompra"
           type="button"
           data-bs-toggle="offcanvas"
           data-bs-target="#demo"
