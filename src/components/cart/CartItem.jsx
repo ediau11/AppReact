@@ -19,7 +19,7 @@ export const CartItem = ({ productoProp }) => {
 
         <button
           onClick={() => carritoContext.removeItem(productoProp.item.id)}
-          className="btn btn-dark textoCompra "
+          className="botonAnimationCarrito textoCompra "
         >
           Eliminar Producto
         </button>

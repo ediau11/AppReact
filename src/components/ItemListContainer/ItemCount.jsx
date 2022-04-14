@@ -48,12 +48,12 @@ export const ItemCount = ({
           <p className="text-center parrafoDetail textoCompra">{precio}$</p>
           {!compra && (
             <div className="botonesSumarRestar">
-              <button onClick={restar} className="btn btn-dark" type="button">
+              <button onClick={restar} className="sumar" type="button">
                 -
               </button>
 
               <span className="mx-3">{contador}</span>
-              <button onClick={sumar} className="btn btn-dark" type="button">
+              <button onClick={sumar} className="sumar" type="button">
                 +
               </button>
             </div>

@@ -2,7 +2,6 @@ import React from "react";
 import { useContext } from "react";
 import { CartContext } from "../../context/CartContext";
 import { CartItem } from "./CartItem";
-
 import { Link } from "react-router-dom";
 export const Carrito = () => {
   const carritoContext = useContext(CartContext);
@@ -43,9 +42,18 @@ export const Carrito = () => {
 
       {cart.length === 0 && (
         <div className="fondoCarritoVacio">
-          <h1 className="text-center textoCarritoVacio">
-            No agregaste Ningun Producto al Carrito :(
+          <h1 className="text-center textoCarritoVacio mt-5">
+            No agregaste ningun producto al carrito :(
           </h1>
+          <h3 className="text-center textoCarritoVacio mt-5">
+            ¿No sabes que Comprar? Te invitamos a ver nuestra variedad de
+            productos!
+          </h3>
+          <Link to={"/productos"}>
+            <button className="botonAnimation textoCompra mt-5 inlineBlock ">
+              Ver Productos
+            </button>
+          </Link>
         </div>
       )}
     </>

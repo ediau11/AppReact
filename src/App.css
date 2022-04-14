@@ -66,8 +66,6 @@
   top: 180px;
   left: 75px;
   color: white;
-
-  font-family: "Roboto", sans-serif;
   margin-top: 2rem;
 }
 .botonInicio {
@@ -76,7 +74,6 @@
   border: none !important;
   width: 130px;
   height: 35px;
-  font-family: "Roboto", sans-serif;
   font-weight: 400 !important;
 }
 .contenedorImagenInicio {
@@ -113,6 +110,57 @@
 }
 .margenContenedor {
   margin-right: 0 !important;
+}
+.contenedorImagenPrincipal {
+  width: 100%;
+  height: 300px;
+}
+.fade-in-image {
+  animation: fadeIn 2s;
+  -webkit-animation: fadeIn 2s;
+  -moz-animation: fadeIn 2s;
+  -o-animation: fadeIn 2s;
+  -ms-animation: fadeIn 2s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 /* Estilos home final */
 
@@ -179,13 +227,23 @@
 /*Card Productos Final  */
 
 /* ItemCount Inicio */
-.botonSumar {
-  margin-left: 20px;
-  padding: 2px;
+.sumar {
+  color: #fff;
+  text-decoration: none;
+  border: 2.4px solid #3655b2;
+  border-radius: 5px;
+  background-color: black;
+  width: 40px;
+  height: 40px;
 }
-.botonesUnidos {
-  margin-left: 4rem;
+
+.sumar:hover {
+  animation: pulsate 1s ease-in-out;
 }
+.botonesSumarRestar {
+  margin-left: 7.8rem;
+}
+
 /* ItemCount Final */
 
 /* Detalle Producto Inicio */
@@ -233,20 +291,14 @@
   width: 200px;
   height: 200px;
 }
-.botonesSumarRestar {
-  margin-left: 8.1rem;
-}
+
 .botonComprar {
   margin-left: 8.5rem;
 }
 .text-center {
   margin-bottom: 1.5rem !important ;
 }
-.botonDetalle1 {
-}
-.tituloDetail1 {
-  margin-left: 4rem;
-}
+
 /* Estilos contador final */
 
 /* Estilos carrito Inicio */
@@ -265,8 +317,8 @@
 
 .fondoCarritoVacio {
   width: 100%;
-  height: 400px;
-  margin-top: 10rem;
+  height: 354px;
+  margin-top: 5rem;
 }
 .color {
   background-color: #f3f3f3;
@@ -285,70 +337,19 @@
 /* Estilos Formulario */
 .contenedorFormulario {
   background-color: #e5e7eb;
-  margin-top: 5rem;
+  margin-top: 6rem;
   max-width: 50%;
   margin-left: 25%;
 }
+.textoFormulario {
+  margin-top: 4.1rem;
+}
+.margenFormulario {
+  margin-top: 2rem;
+}
 /* Estilos Formulario final */
 
-.spinner-border {
-  margin-top: 2rem !important;
-}
-.contenedorImagenPrincipal {
-  width: 100%;
-  height: 300px;
-}
-.fade-in-image {
-  animation: fadeIn 2s;
-  -webkit-animation: fadeIn 2s;
-  -moz-animation: fadeIn 2s;
-  -o-animation: fadeIn 2s;
-  -ms-animation: fadeIn 2s;
-}
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-moz-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-o-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-ms-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
+/* Estilos Botones Inicio */
 
 .botonAnimation {
   display: flex;
@@ -369,7 +370,6 @@
     box-shadow: 0 0 25px #5ddcff, 0 0 50px #4e00c2;
   }
 }
-
 .botonAnimationContainer {
   display: inline-flex;
   color: #fff;
@@ -396,6 +396,13 @@
 .botonAnimationCarrito:hover {
   animation: pulsate 1s ease-in-out;
 }
+
+/* Estilos Botones Final */
+
+.spinner-border {
+  margin-top: 2rem !important;
+}
+
 .textoCompra {
   font-family: Montserrat;
   font-weight: 400;
@@ -414,4 +421,8 @@
 .botonAnimationInicio {
   width: 50px;
   height: 100px;
+}
+
+.inlineBlock {
+  display: inline-block !important;
 }
