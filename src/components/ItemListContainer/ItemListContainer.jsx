@@ -40,9 +40,9 @@ function ItemListContainer() {
     <>
       <ItemList lista={listaProductos} />
       {listaProductos < 1 && (
-        <div class="d-flex justify-content-center">
-          <div class="spinner-border" role="status">
-            <span class="visually-hidden">{loading}</span>
+        <div className="d-flex justify-content-center fondoCart ">
+          <div className="spinner-border" role="status">
+            <span className="visually-hidden">{loading}</span>
           </div>
         </div>
       )}

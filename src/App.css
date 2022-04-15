@@ -68,14 +68,7 @@
   color: white;
   margin-top: 2rem;
 }
-.botonInicio {
-  background-color: white !important;
-  color: black !important;
-  border: none !important;
-  width: 130px;
-  height: 35px;
-  font-weight: 400 !important;
-}
+
 .contenedorImagenInicio {
   width: 300px;
   margin-top: 2rem;
@@ -85,15 +78,6 @@
   position: relative;
   display: inline-block;
   text-align: center;
-}
-
-.tituloCards {
-  display: flex;
-  position: absolute;
-  top: 900px;
-  left: 100px;
-  color: white;
-  font-style: "Roboto", sans-serif;
 }
 
 .contenedorInicio :hover {
@@ -236,26 +220,16 @@
   width: 40px;
   height: 40px;
 }
-
 .sumar:hover {
   animation: pulsate 1s ease-in-out;
 }
 .botonesSumarRestar {
   margin-left: 7.8rem;
 }
-
 /* ItemCount Final */
 
 /* Detalle Producto Inicio */
-.tituloDetalle {
-  text-align: center;
-  margin-top: 4rem;
-  font-size: 2rem;
-}
-.descripcionDetalle {
-  padding: 20px !important;
-  font-size: 1.1rem;
-}
+
 .tituloDetail {
   text-align: center !important;
   margin-bottom: 2rem;
@@ -277,12 +251,7 @@
 /* Detalle Producto Final */
 
 /* Estilos Contador Inicio */
-.centrado {
-  display: flex !important;
-  margin-left: 48%;
-  align-items: center;
-  margin-bottom: 2rem;
-}
+
 .centradoPrecio {
   text-align: center;
   margin-left: 2rem;
@@ -290,10 +259,6 @@
 .imgContador {
   width: 200px;
   height: 200px;
-}
-
-.botonComprar {
-  margin-left: 8.5rem;
 }
 .text-center {
   margin-bottom: 1.5rem !important ;
@@ -329,15 +294,43 @@
 }
 
 .contenedorCarrito {
-  background-color: #e5e7eb;
+  background-image: linear-gradient(
+    to right top,
+    #f9f6f8,
+    #d7d5d8,
+    #b5b6b8,
+    #959798,
+    #77797a,
+    #787a7a,
+    #787a7b,
+    #797b7b,
+    #999a9b,
+    #babbbb,
+    #dcdcdd,
+    #ffffff
+  );
   margin-top: 5rem;
 }
 /* Estilos carrito final */
 
 /* Estilos Formulario */
 .contenedorFormulario {
-  background-color: #e5e7eb;
-  margin-top: 6rem;
+  background-image: linear-gradient(
+    to right top,
+    #f9f6f8,
+    #d7d5d8,
+    #b5b6b8,
+    #959798,
+    #77797a,
+    #787a7a,
+    #787a7b,
+    #797b7b,
+    #999a9b,
+    #babbbb,
+    #dcdcdd,
+    #ffffff
+  );
+  margin-top: 4.8rem;
   max-width: 50%;
   margin-left: 25%;
 }
@@ -402,7 +395,6 @@
 .spinner-border {
   margin-top: 2rem !important;
 }
-
 .textoCompra {
   font-family: Montserrat;
   font-weight: 400;
@@ -422,7 +414,12 @@
   width: 50px;
   height: 100px;
 }
-
 .inlineBlock {
   display: inline-block !important;
+}
+.botonForm {
+  margin-top: 1rem;
+}
+.fondoCart {
+  background-color: #f3f3f3;
 }

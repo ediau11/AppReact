@@ -3,7 +3,7 @@ import Item from "../ItemListContainer/Item";
 
 function ItemList({ lista }) {
   return (
-    <div className=" d-flex flex-wrap">
+    <div className=" d-flex flex-wrap fondoCart">
       {lista.map((producto) => (
         <Item producto={producto} key={producto.id} />
       ))}

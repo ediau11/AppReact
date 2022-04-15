@@ -26,26 +26,26 @@ function ItemDetail({ lista1 }) {
 
   return (
     <>
-      <img className=" mx-auto d-block" src={logoMarca} />
+      <div className="fondoCart">
+        <img className=" mx-auto d-block" src={logoMarca} />
 
-      <div className="container">
-        <h1 className="tituloDetail textoCompra">{titulo}</h1>
-        <p className="parrafoDetail textoCompra">{definicion}</p>
-        <img className="imagenDetalle1 rounded " src={imagenDetalle1}></img>
-        <img className="imagenDetalle1 rounded " src={imagenDetalle2}></img>
-        <h3 className="centradoPrecio textoCompra">{precio}$</h3>
+        <div className="container">
+          <h1 className="tituloDetail textoCompra">{titulo}</h1>
+          <p className="parrafoDetail textoCompra">{definicion}</p>
+          <img className="imagenDetalle1 rounded " src={imagenDetalle1}></img>
+          <img className="imagenDetalle1 rounded " src={imagenDetalle2}></img>
+          <h3 className="centradoPrecio textoCompra">{precio}$</h3>
+        </div>
+        <ItemCount
+          stock={stock}
+          initial={1}
+          contador={contador}
+          setContador={setContador}
+          handleAgregar={handleAgregar}
+          lista1={lista1}
+          compra={compra}
+        />
       </div>
-      <ItemCount
-        stock={stock}
-        initial={1}
-        contador={contador}
-        setContador={setContador}
-        handleAgregar={handleAgregar}
-        lista1={lista1}
-        compra={compra}
-      />
-
-      <div></div>
     </>
   );
 }

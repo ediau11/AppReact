@@ -40,7 +40,7 @@ function ItemDetailContainer() {
     <>
       <ItemDetail lista1={item} />
       {item < 1 && (
-        <div class="d-flex justify-content-center">
+        <div class="d-flex justify-content-center fondoCart">
           <div class="spinner-border" role="status">
             <span class="visually-hidden">{loading}</span>
           </div>

@@ -28,7 +28,7 @@ function Inicio() {
           </h3>
         </div>
         <div className="texto-encima3 ">
-          <Link to={"/productos"}>
+          <Link to={"/detail/Ym6BZRVhEX7kmn7XCIpu"}>
             <button className="  botonAnimationContainer textoCompra">
               Detalles
             </button>
@@ -60,7 +60,7 @@ function Inicio() {
           <div>
             <img
               className="mx-auto d-block"
-              src="https://i.postimg.cc/G2nvZ1Tq/logo-Allem.png"
+              src="https://i.postimg.cc/7L9Ppbdn/logo-PNGNUEVO.png"
               alt=""
             />
           </div>
@@ -79,7 +79,7 @@ function Inicio() {
             <div>
               <img
                 className="mx-auto d-block"
-                src="https://i.postimg.cc/L8ftvXnn/logo-Denon.png"
+                src="https://i.postimg.cc/44P48WjH/D-NQ-NP-834382-MLA31632523948-072019-OFFFF.png"
                 alt=""
               />
             </div>

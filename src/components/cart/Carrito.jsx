@@ -34,26 +34,28 @@ export const Carrito = () => {
 
       {cart.length >= 1 && (
         <div>
-          <h5 className="textoPrecioFinal ">
+          <h5 className="textoPrecioFinal fondoCart ">
             El precio final por su compra es: {carritoContext.getTotalPrice()}$
           </h5>
         </div>
       )}
 
       {cart.length === 0 && (
-        <div className="fondoCarritoVacio">
-          <h1 className="text-center textoCarritoVacio mt-5">
-            No agregaste ningun producto al carrito :(
-          </h1>
-          <h3 className="text-center textoCarritoVacio mt-5">
-            ¿No sabes que Comprar? Te invitamos a ver nuestra variedad de
-            productos!
-          </h3>
-          <Link to={"/productos"}>
-            <button className="botonAnimation textoCompra mt-5 inlineBlock ">
-              Ver Productos
-            </button>
-          </Link>
+        <div className="fondoCart">
+          <div className="fondoCarritoVacio fondoCart">
+            <h1 className="text-center textoCarritoVacio mt-5">
+              No agregaste ningun producto al carrito :(
+            </h1>
+            <h3 className="text-center textoCarritoVacio mt-5">
+              ¿No sabes que Comprar? Te invitamos a ver nuestra variedad de
+              productos!
+            </h3>
+            <Link to={"/productos"}>
+              <button className="botonAnimation textoCompra mt-5 inlineBlock ">
+                Ver Productos
+              </button>
+            </Link>
+          </div>
         </div>
       )}
     </>
