@@ -34,7 +34,7 @@ function ItemDetail({ lista1 }) {
           <p className="parrafoDetail textoCompra">{definicion}</p>
           <img className="imagenDetalle1 rounded " src={imagenDetalle1}></img>
           <img className="imagenDetalle1 rounded " src={imagenDetalle2}></img>
-          <h3 className="centradoPrecio textoCompra">{precio}$</h3>
+          <h3 className="centradoPrecio container textoCompra">{precio}$</h3>
         </div>
         <ItemCount
           stock={stock}

@@ -96,11 +96,9 @@ export const ItemCount = ({
         </div>
       </div>
 
-      <div className="container-fluid mt-3">
-        <h3></h3>
-
+      <div className="container text-center">
         <button
-          className="botonAnimation botonDetalle1 textoCompra"
+          className="botonAnimationContainer  textoCompra"
           type="button"
           data-bs-toggle="offcanvas"
           data-bs-target="#demo"

@@ -93,6 +93,23 @@ function Inicio() {
           </a>
         </div>
       </div>
+      <div className="container text-center icons-wrapper">
+        <img
+          className="icon ri-whatsapp-line"
+          src="https://i.postimg.cc/kgXJb0wM/whatsapp.png"
+          alt=""
+        />
+        <img
+          className="icon ri-facebook-circle-line "
+          src="https://i.postimg.cc/XYpM34Q5/facebook.png"
+          alt=""
+        />
+        <img
+          className="icon"
+          src="https://i.postimg.cc/zD0Pf4LF/instagram.png"
+          alt=""
+        />
+      </div>
     </>
   );
 }

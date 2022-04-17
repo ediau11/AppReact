@@ -50,10 +50,13 @@ export const Carrito = () => {
               ¿No sabes que Comprar? Te invitamos a ver nuestra variedad de
               productos!
             </h3>
+
             <Link to={"/productos"}>
-              <button className="botonAnimation textoCompra mt-5 inlineBlock ">
-                Ver Productos
-              </button>
+              <div className="container text-center">
+                <button className="botonAnimationContainer textoCompra mt-5  ">
+                  Ver Productos
+                </button>
+              </div>
             </Link>
           </div>
         </div>
