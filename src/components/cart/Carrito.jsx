@@ -15,7 +15,7 @@ export const Carrito = () => {
       ))}
 
       {cart.length >= 1 && (
-        <div className="btn-group">
+        <div className="btn-group fondoCart">
           <div>
             <button
               className="botonAnimationCarrito textoCompra"

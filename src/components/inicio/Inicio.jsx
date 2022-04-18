@@ -93,6 +93,10 @@ function Inicio() {
           </a>
         </div>
       </div>
+
+      <h2 className="text-center textoCompra mt-5">
+        Siguenos en nuestras redes sociales...
+      </h2>
       <div className="container text-center icons-wrapper">
         <img
           className="icon ri-whatsapp-line"

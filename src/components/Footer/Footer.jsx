@@ -30,12 +30,12 @@ const Footer = () => {
                 Productos
               </h5>
               <ul className="list-unstyled">
-                <li>
+                <li className="colorLinks">
                   <Link className="colorLinks textoCompra" to="/productos">
                     Nuestros Productos
                   </Link>
                 </li>
-                <li>
+                <li className="colorLinks">
                   <Link
                     className="colorLinks textoCompra"
                     to="/productos/pioneer"
@@ -43,7 +43,7 @@ const Footer = () => {
                     Pioneer
                   </Link>
                 </li>
-                <li>
+                <li className="colorLinks">
                   <Link
                     className="colorLinks textoCompra"
                     to="/productos/allem"
@@ -51,9 +51,9 @@ const Footer = () => {
                     Allen and Heath
                   </Link>
                 </li>
-                <li>
+                <li className="colorLinks">
                   <Link
-                    className="colorLinks textoCompra"
+                    className=" colorLinks textoCompra"
                     to="/productos/denom"
                   >
                     Denom DJ
@@ -65,22 +65,22 @@ const Footer = () => {
             <div className="col-md-3 mb-md-0 mb-3">
               <h5 className="text-uppercase colorLinks1 textoCompra">About</h5>
               <ul className="list-unstyled">
-                <li>
+                <li className="colorLinks">
                   <Link className="colorLinks textoCompra" to="nosotrs">
                     Sobre Nosotros
                   </Link>
                 </li>
-                <li>
+                <li className="colorLinks">
                   <Link className="colorLinks textoCompra" to="">
                     Preguntas Frecuentes
                   </Link>
                 </li>
-                <li>
+                <li className="colorLinks">
                   <Link className="colorLinks textoCompra" to="#!">
                     Medios de Pago
                   </Link>
                 </li>
-                <li>
+                <li className="colorLinks">
                   <Link className="colorLinks textoCompra" to="#!">
                     Redes Sociales
                   </Link>

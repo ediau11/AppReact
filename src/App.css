@@ -1,4 +1,8 @@
 /* Navbar Inicio */
+
+body {
+  background-color: #f3f3f3 !important;
+}
 .navbar {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
