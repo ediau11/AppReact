@@ -26,9 +26,7 @@ export const CartProvider = ({ children }) => {
   };
 
   const removeItem = (id) => {
-    const nuevosProductos = cart.filter(
-      (producto, quantity) => producto.item.id > id + quantity
-    );
+    const nuevosProductos = cart.filter((producto) => producto.item.id !== id);
     setCart(nuevosProductos);
   };
 
