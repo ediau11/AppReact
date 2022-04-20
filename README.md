@@ -8,7 +8,7 @@
 
 ## Resumen:
 
-_ DJ's House App es una Single-page application desarrollada con React Js que simula una tienda E-commerce y el proceso de compra de la misma
+_DJ's House App es una Single-page application desarrollada con React Js que simula una tienda E-commerce y el proceso de compra de la misma
 
 # Getting Started with Create React App
 
