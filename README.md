@@ -1,6 +1,14 @@
 # DJ's House App
+
 ## SPA desarrollada con React Js, Javascript, Css y Bootstrap
+
+###Autor: Eduardo Arcila
+
 ![Gif Proyecto](https://github.com/ediau11/AppReact/blob/master/public/ImagenesApp/AnimationProyecto.gif)
+
+##Resumen:
+
+_DJ's House App es una Single-page application desarrollada con React Js que simula una tienda E-commerce y el proceso de compra de la misma
 
 # Getting Started with Create React App
 
