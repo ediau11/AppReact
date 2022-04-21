@@ -176,6 +176,9 @@ body {
 .colorLinks1 {
   color: white;
 }
+.fondoCart {
+  vertical-align: initial !important;
+}
 /* Footer final */
 
 /* Card Productos inicio */
@@ -191,7 +194,7 @@ body {
 }
 .cardEduardo {
   height: 410px;
-  width: 300px !important;
+  width: 290px !important;
 }
 .card-body {
   background-image: linear-gradient(
@@ -334,8 +337,8 @@ body {
     #ffffff
   );
   margin-top: 4.8rem;
-  max-width: 50%;
-  margin-left: 25%;
+  max-width: 70%;
+  margin-left: 15%;
 }
 .textoFormulario {
   margin-top: 4.1rem;

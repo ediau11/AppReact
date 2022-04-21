@@ -16,8 +16,8 @@ export const Carrito = () => {
       ))}
 
       {cart.length >= 1 && (
-        <div className="btn-group fondoCart">
-          <div>
+        <div className="container text-center mt-5">
+          <div className="btn-group fondoCart">
             <button
               className="botonAnimationCarrito textoCompra"
               onClick={carritoContext.clear}
@@ -35,7 +35,7 @@ export const Carrito = () => {
 
       {cart.length >= 1 && (
         <div>
-          <h5 className="textoPrecioFinal fondoCart ">
+          <h5 className="textoPrecioFinal fondoCart text-center ">
             El precio final por su compra es: {carritoContext.getTotalPrice()}$
           </h5>
         </div>

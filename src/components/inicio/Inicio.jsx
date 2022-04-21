@@ -37,8 +37,8 @@ function Inicio() {
       </div>
       <h1 className="text-center textoInicio">Nuestras Marcas</h1>
 
-      <div class="row margenContenedor">
-        <div class="col">
+      <div className="row margenContenedor">
+        <div className="col">
           <div>
             <img
               className="mx-auto d-block"
@@ -56,7 +56,7 @@ function Inicio() {
             </div>
           </a>
         </div>
-        <div class="col">
+        <div className="col">
           <div>
             <img
               className="mx-auto d-block"
@@ -74,7 +74,7 @@ function Inicio() {
             </div>
           </a>
         </div>
-        <div class="col">
+        <div className="col">
           <a target="_blank" href="https://www.denondj.com/">
             <div>
               <img
@@ -98,21 +98,27 @@ function Inicio() {
         Siguenos en nuestras redes sociales...
       </h2>
       <div className="container text-center icons-wrapper">
-        <img
-          className="icon ri-whatsapp-line"
-          src="https://i.postimg.cc/kgXJb0wM/whatsapp.png"
-          alt=""
-        />
-        <img
-          className="icon ri-facebook-circle-line "
-          src="https://i.postimg.cc/XYpM34Q5/facebook.png"
-          alt=""
-        />
-        <img
-          className="icon"
-          src="https://i.postimg.cc/zD0Pf4LF/instagram.png"
-          alt=""
-        />
+        <a target="_blank" href="https://web.whatsapp.com/">
+          <img
+            className="icon ri-whatsapp-line"
+            src="https://i.postimg.cc/kgXJb0wM/whatsapp.png"
+            alt=""
+          />
+        </a>
+        <a target="_blank" href="https://www.facebook.com/">
+          <img
+            className="icon ri-facebook-circle-line "
+            src="https://i.postimg.cc/XYpM34Q5/facebook.png"
+            alt=""
+          />
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
+          <img
+            className="icon"
+            src="https://i.postimg.cc/zD0Pf4LF/instagram.png"
+            alt=""
+          />
+        </a>
       </div>
     </>
   );

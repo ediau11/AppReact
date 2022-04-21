@@ -8,7 +8,6 @@ function ItemDetail({ lista1 }) {
   const [compra, setCompra] = useState(false);
   const [contador, setContador] = useState(1);
   const {
-    id,
     stock,
     titulo,
     logoMarca,
@@ -16,7 +15,6 @@ function ItemDetail({ lista1 }) {
     imagenDetalle1,
     imagenDetalle2,
     definicion,
-    descripcion,
   } = lista1;
 
   const handleAgregar = () => {

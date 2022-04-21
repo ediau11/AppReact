@@ -5,7 +5,7 @@ export const CartItem = ({ productoProp }) => {
   const carritoContext = useContext(CartContext);
   return (
     <>
-      <div class="container contenedorCarrito text-center">
+      <div className="container contenedorCarrito text-center">
         <img
           className="imagenMezclador"
           src={productoProp.item.imagenDetalle1}

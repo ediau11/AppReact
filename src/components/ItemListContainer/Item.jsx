@@ -6,9 +6,9 @@ const Item = ({ producto }) => {
   return (
     <>
       <div className="fondoCart">
-        <body className="color">
+        <div className="color">
           <div className="row">
-            <div className="col-lg-4">
+            <div className="col-sm-3 p-3 ">
               <div className="card cardEduardo">
                 <div className="card-body">
                   <h2 className="card-title textoCompra">{producto.titulo}</h2>
@@ -28,7 +28,7 @@ const Item = ({ producto }) => {
               </div>
             </div>
           </div>
-        </body>
+        </div>
       </div>
     </>
   );

@@ -6,8 +6,6 @@ import { CartContext } from "../../context/CartContext";
 import { useNavigate } from "react-router-dom";
 
 const Formulario = () => {
-  const [loading, setLoading] = useState(true);
-
   const [refOrder, setRefOrder] = useState(null);
   const navigate = useNavigate();
   const { clear, cart, getTotalPrice } = useContext(CartContext);
@@ -61,7 +59,7 @@ const Formulario = () => {
       )}
 
       {!refOrder && (
-        <div className="fondoCart">
+        <div className="fondoCart container text-center">
           <h1 className="text-center textoCompra textoFormulario">
             Ingresa tus datos para finalizar tu compra
           </h1>
@@ -72,19 +70,19 @@ const Formulario = () => {
               role="form"
             >
               <div className="form-group textoCompra">
-                <label for="text">Nombre:</label>
+                <label>Nombre:</label>
 
                 <input type="text" className="form-control" id="email" />
               </div>
 
               <div className="form-group textoCompra">
-                <label for="pwd">Telefono:</label>
+                <label>Telefono:</label>
 
                 <input type="text" className="form-control" id="pwd" />
               </div>
 
-              <div class="form-group textoCompra">
-                <label for="pwd">Email:</label>
+              <div className="form-group textoCompra">
+                <label>Email:</label>
 
                 <input type="email" className="form-control" id="pwd" />
               </div>
