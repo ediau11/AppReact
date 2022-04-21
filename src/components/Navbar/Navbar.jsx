@@ -1,7 +1,5 @@
 import React from "react";
 import logo from "./Logos/LogoNav2.png";
-import Instagram from "./iconosRedesSociales/IconoInstagram.svg";
-import Whatsapp from "./iconosRedesSociales/IconoWs.svg";
 import { Link } from "react-router-dom";
 import Carrito from "./Logos/CarritoCompra.png";
 import { useContext } from "react";
