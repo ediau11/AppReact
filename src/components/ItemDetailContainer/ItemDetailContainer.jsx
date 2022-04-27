@@ -16,14 +16,6 @@ function ItemDetailContainer() {
   console.log("carritoDetalle", cart);
   useEffect(() => {
     const getData = async () => {
-      const query = collection(db, "Items");
-      const respuesta = await getDocs(query);
-      const dataItems = respuesta.docs.map((doc) => {
-        return { id: doc.id, ...doc.data() };
-      });
-
-      setItem(dataItems);
-
       const queryDoc = doc(db, "Items", itemId);
       const respuesta1 = await getDoc(queryDoc);
       const dataDoc = respuesta1.data();

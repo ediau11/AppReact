@@ -1,15 +1,11 @@
 import React from "react";
 import logo from "./Logos/LogoNav2.png";
 import { Link } from "react-router-dom";
-import Carrito from "./Logos/CarritoCompra.png";
-import { useContext } from "react";
-import { CartContext } from "../../context/CartContext";
+import CartWidget from "../CartWidget/CartWidget";
 
 const Navbar = () => {
-  const carritoContext = useContext(CartContext);
-
   return (
-    <div>
+    <>
       <nav className="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
         <div className="container-fluid">
           <Link to="/">
@@ -61,21 +57,11 @@ const Navbar = () => {
                 </Link>
               </li>
             </ul>
-
-            <div>
-              <Link to="Carrito">
-                <img src={Carrito} className="navbar-brand" />
-              </Link>
-            </div>
-            {carritoContext.getTotalCount() > 0 && (
-              <span className="badge bg-secondary">
-                {carritoContext.getTotalCount()}
-              </span>
-            )}
           </div>
         </div>
+        <CartWidget />
       </nav>
-    </div>
+    </>
   );
 };
 
