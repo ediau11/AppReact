@@ -4,6 +4,12 @@ import { Link } from "react-router-dom";
 import CartWidget from "../CartWidget/CartWidget";
 
 const Navbar = () => {
+  const categorias = [
+    { url: "allem", name: "Allem and Heath" },
+    { url: "pioneer", name: "Pioneer" },
+    { url: "denom", name: "Denom" },
+  ];
+
   return (
     <>
       <nav className="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
@@ -41,21 +47,13 @@ const Navbar = () => {
                   Productos
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="productos/pioneer">
-                  Pioneer
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/productos/allem">
-                  Allem and Heath
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/productos/denom">
-                  DenomDJ
-                </Link>
-              </li>
+              {categorias.map((category) => (
+                <li className="nav-item">
+                  <Link className="nav-link" to={`/productos/${category.url}`}>
+                    {category.name}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </div>

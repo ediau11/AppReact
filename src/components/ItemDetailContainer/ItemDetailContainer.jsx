@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import ItemDetail from "./ItemDetail";
 import { useParams } from "react-router-dom";
 import { useCart } from "../../context/CartContext";
-import { getDocs, collection, getDoc, doc } from "firebase/firestore";
+import { getDoc, doc } from "firebase/firestore";
 import { db } from "../../utils/firebase";
 
 function ItemDetailContainer() {
@@ -19,12 +19,12 @@ function ItemDetailContainer() {
       const queryDoc = doc(db, "Items", itemId);
       const respuesta1 = await getDoc(queryDoc);
       const dataDoc = respuesta1.data();
-      console.log("info1SoloProducto", dataDoc);
       const nuevoDocumento = { id: respuesta1.id, ...dataDoc };
 
       setItem(nuevoDocumento);
+      setLoading(false);
     };
-    setLoading(false);
+
     getData();
   }, [itemId]);
 
