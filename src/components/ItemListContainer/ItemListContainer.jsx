@@ -4,10 +4,10 @@ import ItemList from "../ItemListContainer/ItemList";
 import { useCart } from "../../context/CartContext";
 import { getDocs, collection } from "firebase/firestore";
 import { db } from "../../utils/firebase";
+import Loading from "../Loading/Loading";
 
 function ItemListContainer() {
   const [listaProductos, setListaProductos] = useState([]);
-  const [loading, setLoading] = useState(true);
 
   const { categoryId } = useParams();
   const { cart } = useCart();
@@ -28,7 +28,6 @@ function ItemListContainer() {
         );
       } else {
         setListaProductos(dataItems);
-        setLoading(false);
       }
     };
 
@@ -39,13 +38,7 @@ function ItemListContainer() {
   return (
     <>
       <ItemList lista={listaProductos} />
-      {listaProductos < 1 && (
-        <div className="d-flex justify-content-center fondoCart ">
-          <div className="spinner-border" role="status">
-            <span className="visually-hidden">{loading}</span>
-          </div>
-        </div>
-      )}
+      {listaProductos < 1 && <Loading />}
     </>
   );
 }
