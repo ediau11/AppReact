@@ -10,6 +10,11 @@
 
 _DJ's House App es una Single-page application desarrollada con React Js que simula una tienda E-commerce y el proceso de compra de la misma_
 
+## Esta proyeco utiliza las siguientes tecnologias:
+
+_Bootstrap
+_React Router Dom
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
