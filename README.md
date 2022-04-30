@@ -12,7 +12,7 @@ _DJ's House App es una Single-page application desarrollada con React Js que sim
 
 ## Este proyeco utiliza las siguientes tecnologias:
 
-_Bootstrap
+_Bootstrap_
 
 # Getting Started with Create React App
 
