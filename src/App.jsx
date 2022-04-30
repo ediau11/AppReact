@@ -11,6 +11,7 @@ import { Carrito } from "./././components/cart/Carrito";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { CartProvider } from "./context/CartContext";
 import Formulario from "./components/Formulario/Formulario";
+import Error from "./components/Error/Error";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
             <Route path="/detail/:itemId" element={<ItemDetailContainer />} />
             <Route path="/Carrito" element={<Carrito />} />
             <Route path="/Formulario" element={<Formulario />} />
+            <Route path="*" element={<Error />} />
           </Routes>
 
           <Footer />

@@ -3,15 +3,15 @@ import { db } from "../../utils/firebase";
 import { addDoc, Timestamp, collection } from "firebase/firestore";
 import { useContext, useState } from "react";
 import { CartContext } from "../../context/CartContext";
+import OrdenConfirm from "../OrdenConfirm/OrdenConfirm";
+import CartEmpty from "../CartEmpty/CartEmpty";
 import { useNavigate } from "react-router-dom";
 
 const Formulario = () => {
-  const [refOrder, setRefOrder] = useState(null);
-  const navigate = useNavigate();
-  const { clear, cart, getTotalPrice } = useContext(CartContext);
+  const [refOrder, setRefOrder] = useState();
+  const { clear, cart, getTotalPrice, getTotalCount } = useContext(CartContext);
   const sendOrder = async (e) => {
     e.preventDefault();
-    console.log("evento formulario", e);
     const nombre = e.target[0].value;
     const telefono = e.target[1].value;
     const email = e.target[2].value;
@@ -37,28 +37,15 @@ const Formulario = () => {
       .finally(() => clear());
   };
 
+  if (refOrder) {
+    return <OrdenConfirm refOrder={refOrder} />;
+  }
+
   return (
     <>
-      {refOrder && (
-        <div className="text-center p-5 mt-5">
-          <h1 className="textoCompra">Listo!</h1>
-
-          <h3 className="textoCompra mt-5">Muchas gracias por su compra!</h3>
-
-          <p className="textoCompra mt margenFormulario">
-            Su orden {refOrder.id} esta siendo procesada
-          </p>
-
-          <button
-            className="botonAnimationCarrito mt-5 textoCompra"
-            onClick={() => navigate("/Productos")}
-          >
-            Volver a comprar
-          </button>
-        </div>
-      )}
-
-      {!refOrder && (
+      {!refOrder && getTotalCount() < 1 ? (
+        <CartEmpty />
+      ) : (
         <div className="fondoCart container text-center">
           <h1 className="text-center textoCompra textoFormulario">
             Ingresa tus datos para finalizar tu compra
@@ -97,6 +84,25 @@ const Formulario = () => {
           </div>
         </div>
       )}
+      {/* 
+      {refOrder && (
+        <div className="text-center p-5 mt-5">
+          <h1 className="textoCompra">Listo!</h1>
+
+          <h3 className="textoCompra mt-5">Muchas gracias por su compra!</h3>
+
+          <p className="textoCompra mt margenFormulario">
+            Su orden {refOrder.id} esta siendo procesada
+          </p>
+
+          <button
+            className="botonAnimationCarrito mt-5 textoCompra"
+            onClick={() => navigate("/Productos")}
+          >
+            Volver a comprar
+          </button>
+        </div>
+      )} */}
     </>
   );
 };

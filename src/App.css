@@ -468,3 +468,17 @@ body {
 .aa {
   color: #212529 !important;
 }
+
+.contenedor404 {
+  margin-top: 7rem;
+}
+
+.textoError404 {
+  margin-top: 2rem;
+}
+
+.logo404 {
+  font-size: 6rem;
+  font-weight: 500;
+  padding: 5.5px;
+}
