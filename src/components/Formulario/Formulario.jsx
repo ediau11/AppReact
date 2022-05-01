@@ -37,7 +37,7 @@ const Formulario = () => {
   };
 
   if (refOrder) {
-    return <OrdenConfirm refOrder={refOrder} sendOrder={sendOrder} />;
+    return <OrdenConfirm refOrder={refOrder} />;
   }
 
   return (
@@ -58,19 +58,46 @@ const Formulario = () => {
               <div className="form-group textoCompra">
                 <label>Nombre:</label>
 
-                <input type="text" className="form-control" id="email" />
+                <input
+                  className="form-control"
+                  id="email"
+                  type="text"
+                  pattern="[A-Z a-z]+"
+                  minLength="1"
+                  maxLength="40"
+                  required
+                  placeholder="Ingrese nombre"
+                />
               </div>
 
               <div className="form-group textoCompra">
                 <label>Telefono:</label>
 
-                <input type="text" className="form-control" id="pwd" />
+                <input
+                  minLength="8"
+                  maxLength="10"
+                  pattern="[0-9]+"
+                  required
+                  type="text"
+                  className="form-control"
+                  id="pwd"
+                  placeholder="Ingrese telefono"
+                />
               </div>
 
               <div className="form-group textoCompra">
                 <label>Email:</label>
 
-                <input type="email" className="form-control" id="pwd" />
+                <input
+                  minLength="5"
+                  maxLength="50"
+                  pattern="[A-Za-z0-9 @.]+"
+                  required
+                  type="email"
+                  className="form-control"
+                  id="pwd"
+                  placeholder="Ingrese correo electronico"
+                />
               </div>
 
               <button
